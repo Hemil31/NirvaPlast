@@ -30,8 +30,8 @@ Route::get('/terms-condition', function () {
     return view('terms-condition');
 })->name('terms-condition-page');
 
-Route::get('/admin', function () {
-    return view('admin.index');
+Route::get('/adminss', function () {
+    return view('admin.layout.main');
 })->name('admin-page');
 
 Route::fallback(function () {
