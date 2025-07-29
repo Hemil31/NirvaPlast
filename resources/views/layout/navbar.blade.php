@@ -1,11 +1,17 @@
 <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
     <div class="container-fluid">
         <!-- Brand Name -->
-        <a href="{{ route('home-page') }}" class="navbar-brand d-flex align-items-center px-2 px-lg-4">
-            <h1 class="m-0 fs-5 text-break text-center">
-                Patel Landscaping<br>And Garden Care
-            </h1>
+
+        <a href="{{ route('home-page') }}" class="navbar-brand d-flex align-items-center gap-2 gap-lg-3 px-2 px-lg-4">
+            <img src="{{ asset('images/01.png') }}" alt="Logo" style="height: 50px; max-width: 100%; object-fit: contain;">
+            <div class="d-flex flex-column text-start">
+                <h1 class="m-0 fs-6 fs-lg-5 text-break">
+                    Patel Landscaping<br>And Garden Care
+                </h1>
+            </div>
         </a>
+
+
 
         <!-- Toggler for Mobile View -->
         <button class="navbar-toggler me-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
