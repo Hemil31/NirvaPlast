@@ -4,7 +4,7 @@
         <!-- Logo Header -->
         <div class="logo-header" data-background-color="dark">
             <a href="index.html" class="logo">
-                <img src="admin/img/kaiadmin/logo_light.svg" alt="navbar brand" class="navbar-brand" height="20" />
+                <img src="{{ asset('admin/img/kaiadmin/logo_light.svg') }}" alt="navbar brand" class="navbar-brand" height="20" />
             </a>
             <div class="nav-toggle">
                 <button class="btn btn-toggle toggle-sidebar">
@@ -24,16 +24,16 @@
         <div class="sidebar-content">
             <ul class="nav nav-secondary">
                 <li class="nav-item">
-                    <a href="widgets.html">
+                    <a href="{{ route('admin-dashboard-page') }}">
                         <i class="fas fa-home"></i>
                         <p>Dashboard</p>
                         {{-- <span class="badge badge-success">4</span> --}}
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="../../documentation/index.html">
+                    <a href="{{ route('admin-blog-page') }}">
                         <i class="fas fa-file"></i>
-                        <p>Documentation</p>
+                        <p>Blog</p>
                         {{-- <span class="badge badge-secondary">1</span> --}}
                     </a>
                 </li>

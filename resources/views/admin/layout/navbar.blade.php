@@ -42,7 +42,7 @@
                             <div class="notif-center">
                                 <a href="#">
                                     <div class="notif-img">
-                                        <img src="admin/img/jm_denis.jpg" alt="Img Profile" />
+                                        <img src="{{ asset('admin/img/jm_denis.jpg') }}" alt="Img Profile" />
                                     </div>
                                     <div class="notif-content">
                                         <span class="subject">Jimmy Denis</span>
@@ -52,7 +52,7 @@
                                 </a>
                                 <a href="#">
                                     <div class="notif-img">
-                                        <img src="admin/img/chadengle.jpg" alt="Img Profile" />
+                                        <img src="{{ asset('admin/img/chadengle.jpg') }}" alt="Img Profile" />
                                     </div>
                                     <div class="notif-content">
                                         <span class="subject">Chad</span>
@@ -62,7 +62,7 @@
                                 </a>
                                 <a href="#">
                                     <div class="notif-img">
-                                        <img src="admin/img/mlane.jpg" alt="Img Profile" />
+                                        <img src="{{ asset('admin/img/mlane.jpg') }}" alt="Img Profile" />
                                     </div>
                                     <div class="notif-content">
                                         <span class="subject">Jhon Doe</span>
@@ -74,7 +74,7 @@
                                 </a>
                                 <a href="#">
                                     <div class="notif-img">
-                                        <img src="admin/img/talha.jpg" alt="Img Profile" />
+                                        <img src="{{ asset('admin/img/talha.jpg') }}" alt="Img Profile" />
                                     </div>
                                     <div class="notif-content">
                                         <span class="subject">Talha</span>
@@ -128,7 +128,7 @@
                                 </a>
                                 <a href="#">
                                     <div class="notif-img">
-                                        <img src="admin/img/profile2.jpg" alt="Img Profile" />
+                                        <img src="{{ asset('admin/img/profile2.jpg') }}" alt="Img Profile" />
                                     </div>
                                     <div class="notif-content">
                                         <span class="block">
@@ -226,7 +226,8 @@
                 <a class="dropdown-toggle profile-pic" data-bs-toggle="dropdown" href="#"
                     aria-expanded="false">
                     <div class="avatar-sm">
-                        <img src="admin/img/profile.jpg" alt="..." class="avatar-img rounded-circle" />
+                        <img src="{{ asset('admin/img/profile.jpg') }}" alt="..."
+                            class="avatar-img rounded-circle" />
                     </div>
                     <span class="profile-username">
                         <span class="op-7">Hi,</span>
@@ -238,7 +239,7 @@
                         <li>
                             <div class="user-box">
                                 <div class="avatar-lg">
-                                    <img src="admin/img/profile.jpg" alt="image profile"
+                                    <img src="{{ asset('admin/img/profile.jpg') }}" alt="image profile"
                                         class="avatar-img rounded" />
                                 </div>
                                 <div class="u-text">
