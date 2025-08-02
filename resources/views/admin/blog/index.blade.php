@@ -46,6 +46,11 @@
                                     </tr>
                                 </thead>
                                 <tbody>
+                                    @empty($blogs)
+                                        <tr>
+                                            <td colspan="5" class="text-center">No blogs found</td>
+                                        </tr>
+                                    @endempty
                                     @foreach ($blogs as $blog)
                                         <tr>
                                             <td>{{ $loop->iteration }}</td>
