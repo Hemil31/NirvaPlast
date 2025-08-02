@@ -12,7 +12,7 @@
                     </div>
                     <div class="service-text rounded p-5">
                         <div class="btn-square rounded-circle mx-auto mb-3">
-                            <img class="img-fluid" src="front/img/icon/icon-6.png" alt="Icon">
+                            <img class="img-fluid" src="images/hedge-trimmer.png" alt="Icon">
                         </div>
                         <h4 class="mb-3">Hedge Trimming</h4>
                         <p class="mb-4">High-quality turf installation services for a lush, green, and lasting lawn.
@@ -28,7 +28,7 @@
                     </div>
                     <div class="service-text rounded p-5">
                         <div class="btn-square rounded-circle mx-auto mb-3">
-                            <img class="img-fluid" src="front/img/icon/icon-6.png" alt="Icon">
+                            <img class="img-fluid" src="images/landscape.png" alt="Icon">
                         </div>
                         <h4 class="mb-3">Landscaping</h4>
                         <p class="mb-4">Transform your outdoor space with complete landscaping services tailored to
@@ -44,7 +44,7 @@
                     </div>
                     <div class="service-text rounded p-5">
                         <div class="btn-square rounded-circle mx-auto mb-3">
-                            <img class="img-fluid" src="front/img/icon/icon-5.png" alt="Icon">
+                            <img class="img-fluid" src="images/mulching.png" alt="Icon">
                         </div>
                         <h4 class="mb-3">Mulching (Strata)</h4>
                         <p class="mb-4">Improve soil quality, retain moisture, and suppress weeds with quality
@@ -60,7 +60,7 @@
                     </div>
                     <div class="service-text rounded p-5">
                         <div class="btn-square rounded-circle mx-auto mb-3">
-                            <img class="img-fluid" src="front/img/icon/icon-4.png" alt="Icon">
+                            <img class="img-fluid" src="images/paving.png" alt="Icon">
                         </div>
                         <h4 class="mb-3">Paving</h4>
                         <p class="mb-4">Stylish and durable paving solutions for driveways, walkways, and patios.</p>
@@ -75,7 +75,7 @@
                     </div>
                     <div class="service-text rounded p-5">
                         <div class="btn-square rounded-circle mx-auto mb-3">
-                            <img class="img-fluid" src="front/img/icon/icon-8.png" alt="Icon">
+                            <img class="img-fluid" src="images/wall.png" alt="Icon">
                         </div>
                         <h4 class="mb-3">Retaining Walls</h4>
                         <p class="mb-4">Functional and aesthetic retaining wall solutions to suit all landscapes.</p>
@@ -90,7 +90,7 @@
                     </div>
                     <div class="service-text rounded p-5">
                         <div class="btn-square rounded-circle mx-auto mb-3">
-                            <img class="img-fluid" src="front/img/icon/icon-11.png" alt="Icon">
+                            <img class="img-fluid" src="images/litte.png" alt="Icon">
                         </div>
                         <h4 class="mb-3">Rubbish & Land Removals</h4>
                         <p class="mb-4">Safe and efficient removal of green waste, debris, and unwanted materials.
@@ -108,7 +108,7 @@
                     </div>
                     <div class="service-text rounded p-5">
                         <div class="btn-square rounded-circle mx-auto mb-3">
-                            <img class="img-fluid" src="front/img/icon/icon-11.png" alt="Icon">
+                            <img class="img-fluid" src="images/gardene.png" alt="Icon">
                         </div>
                         <h4 class="mb-3">Tree Lopping</h4>
                         <p class="mb-4">Professional tree trimming and lopping for safety, aesthetics, and health.
@@ -126,7 +126,7 @@
                     </div>
                     <div class="service-text rounded p-5">
                         <div class="btn-square rounded-circle mx-auto mb-3">
-                            <img class="img-fluid" src="front/img/icon/icon-11.png" alt="Icon">
+                            <img class="img-fluid" src="images/gardener.png" alt="Icon">
                         </div>
                         <h4 class="mb-3">Turf Laying</h4>
                         <p class="mb-4">High-quality turf installation services for a lush, green, and lasting lawn.
@@ -144,7 +144,7 @@
                     </div>
                     <div class="service-text rounded p-5">
                         <div class="btn-square rounded-circle mx-auto mb-3">
-                            <img class="img-fluid" src="front/img/icon/icon-11.png" alt="Icon">
+                            <img class="img-fluid" src="images/labor.png" alt="Icon">
                         </div>
                         <h4 class="mb-3">Weeding</h4>
                         <p class="mb-4">Effective removal of weeds to maintain a healthy and clean outdoor
