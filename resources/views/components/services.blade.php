@@ -60,7 +60,7 @@
                     </div>
                     <div class="service-text rounded p-5">
                         <div class="btn-square rounded-circle mx-auto mb-3">
-                            <img class="img-fluid" src="images/construction.png" alt="Icon">
+                            <img class="img-fluid" src="images/paving.png" alt="Icon">
                         </div>
                         <h4 class="mb-3">Paving</h4>
                         <p class="mb-4">Stylish and durable paving solutions for driveways, walkways, and patios.</p>
@@ -90,7 +90,7 @@
                     </div>
                     <div class="service-text rounded p-5">
                         <div class="btn-square rounded-circle mx-auto mb-3">
-                            <img class="img-fluid" src="images/litter.png" alt="Icon">
+                            <img class="img-fluid" src="images/litte.png" alt="Icon">
                         </div>
                         <h4 class="mb-3">Rubbish & Land Removals</h4>
                         <p class="mb-4">Safe and efficient removal of green waste, debris, and unwanted materials.
@@ -108,7 +108,7 @@
                     </div>
                     <div class="service-text rounded p-5">
                         <div class="btn-square rounded-circle mx-auto mb-3">
-                            <img class="img-fluid" src="images/tree.png" alt="Icon">
+                            <img class="img-fluid" src="images/gardene.png" alt="Icon">
                         </div>
                         <h4 class="mb-3">Tree Lopping</h4>
                         <p class="mb-4">Professional tree trimming and lopping for safety, aesthetics, and health.
@@ -144,7 +144,7 @@
                     </div>
                     <div class="service-text rounded p-5">
                         <div class="btn-square rounded-circle mx-auto mb-3">
-                            <img class="img-fluid" src="images/logo.png" alt="Icon">
+                            <img class="img-fluid" src="images/labor.png" alt="Icon">
                         </div>
                         <h4 class="mb-3">Weeding</h4>
                         <p class="mb-4">Effective removal of weeds to maintain a healthy and clean outdoor
