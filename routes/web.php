@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Admin\BlogController;
+use App\Http\Controllers\Admin\InquireController;
 use App\Http\Controllers\Admin\LoginController;
 use Illuminate\Support\Facades\Route;
 
@@ -58,8 +59,22 @@ Route::prefix('admin')->group(function () {
                 'show' => 'admin.blog.show',
             ]);
         });
+
+        Route::prefix('inquire')->group(function () {
+            Route::resource('/', InquireController::class)->parameters(['' => 'inquire'])->names([
+                'index' => 'admin-inquire-page',
+                'create' => 'admin-inquire-create-page',
+                'edit' => 'admin-inquire-edit-page',
+                'update' => 'admin.inquire.update',
+                'destroy' => 'admin.inquire.delete',
+                'show' => 'admin.inquire.show',
+            ]);
+        });
+
     });
 });
+
+Route::post('/inquire/store', [InquireController::class, 'store'])->name('admin.inquire.store');
 
 Route::fallback(function () {
     return view('404');
