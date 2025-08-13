@@ -56,7 +56,7 @@
             </div>
 
             <!-- Desktop Only CTA Button -->
-            <a href="" class="btn btn-primary py-4 px-lg-4 rounded-0 d-none d-lg-block">Get A Quote<i
+            <a href="{{ route('contact-page') }}" class="btn btn-primary py-4 px-lg-4 rounded-0 d-none d-lg-block">Get A Quote<i
                     class="fa fa-arrow-right ms-3"></i></a>
 
             </a>

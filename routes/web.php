@@ -3,6 +3,7 @@
 use App\Http\Controllers\Admin\BlogController;
 use App\Http\Controllers\Admin\InquireController;
 use App\Http\Controllers\Admin\LoginController;
+use App\Models\Blog;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -25,8 +26,9 @@ Route::get('/contact', function () {
     return view('contact');
 })->name('contact-page');
 
-Route::get('/blog', function () {
-    return view('blog');
+Route::get('/blog/', function () {
+    $blogs = Blog::all();
+    return view('blog', compact('blogs'));
 })->name('blog-page');
 
 Route::get('/terms-condition', function () {
