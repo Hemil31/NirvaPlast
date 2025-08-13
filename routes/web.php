@@ -1,7 +1,9 @@
 <?php
 
 use App\Http\Controllers\Admin\BlogController;
+use App\Http\Controllers\Admin\InquireController;
 use App\Http\Controllers\Admin\LoginController;
+use App\Models\Blog;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -24,8 +26,9 @@ Route::get('/contact', function () {
     return view('contact');
 })->name('contact-page');
 
-Route::get('/blog', function () {
-    return view('blog');
+Route::get('/blog/', function () {
+    $blogs = Blog::all();
+    return view('blog', compact('blogs'));
 })->name('blog-page');
 
 Route::get('/terms-condition', function () {
@@ -58,8 +61,22 @@ Route::prefix('admin')->group(function () {
                 'show' => 'admin.blog.show',
             ]);
         });
+
+        Route::prefix('inquire')->group(function () {
+            Route::resource('/', InquireController::class)->parameters(['' => 'inquire'])->names([
+                'index' => 'admin-inquire-page',
+                'create' => 'admin-inquire-create-page',
+                'edit' => 'admin-inquire-edit-page',
+                'update' => 'admin.inquire.update',
+                'destroy' => 'admin.inquire.delete',
+                'show' => 'admin.inquire.show',
+            ]);
+        });
+
     });
 });
+
+Route::post('/inquire/store', [InquireController::class, 'store'])->name('admin.inquire.store');
 
 Route::fallback(function () {
     return view('404');

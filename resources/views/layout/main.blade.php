@@ -49,6 +49,7 @@
     @include('layout.js')
     <!-- Js Done -->
 
+    @stack('scripts')
 </body>
 
 </html>

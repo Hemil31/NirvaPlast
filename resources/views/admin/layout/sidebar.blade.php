@@ -40,6 +40,13 @@
                         {{-- <span class="badge badge-secondary">1</span> --}}
                     </a>
                 </li>
+                <li class="nav-item">
+                    <a href="{{ route('admin-inquire-page') }}">
+                        <i class="fas fa-question-circle"></i>
+                        <p>Inquiries</p>
+                        {{-- <span class="badge badge-secondary">1</span> --}}
+                    </a>
+                </li>
             </ul>
         </div>
     </div>
