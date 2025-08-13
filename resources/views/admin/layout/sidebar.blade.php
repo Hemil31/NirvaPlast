@@ -4,7 +4,10 @@
         <!-- Logo Header -->
         <div class="logo-header" data-background-color="dark">
             <a href="index.html" class="logo">
-                <img src="{{ asset('admin/img/kaiadmin/logo_light.svg') }}" alt="navbar brand" class="navbar-brand" height="20" />
+                <h1
+                    style="color: white; opacity: 0.75; font-size: 18px; max-width: 100%; line-height: 1.2; margin: 0; padding: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+                    Admin
+                </h1>
             </a>
             <div class="nav-toggle">
                 <button class="btn btn-toggle toggle-sidebar">
@@ -34,6 +37,13 @@
                     <a href="{{ route('admin-blog-page') }}">
                         <i class="fas fa-file"></i>
                         <p>Blog</p>
+                        {{-- <span class="badge badge-secondary">1</span> --}}
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="{{ route('admin-inquire-page') }}">
+                        <i class="fas fa-question-circle"></i>
+                        <p>Inquiries</p>
                         {{-- <span class="badge badge-secondary">1</span> --}}
                     </a>
                 </li>

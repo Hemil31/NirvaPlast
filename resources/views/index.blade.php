@@ -133,46 +133,50 @@
                 <div class="col-lg-7">
                     <div class="bg-white rounded p-4 p-sm-5 wow fadeIn" data-wow-delay="0.5s">
                         <h1 class="display-5 text-center mb-5">Get A Free Quote</h1>
-                        <div class="row g-3">
-                            <div class="col-sm-6">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control bg-light border-0" id="gname"
-                                        placeholder="Gurdian Name">
-                                    <label for="gname">Your Name</label>
+                        <div id="formAlert"></div>
+                        <form id="quoteForm">
+                            @csrf
+                            <div class="row g-3">
+                                <div class="col-sm-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control bg-light border-0" id="gname"
+                                            name="name" placeholder="Your Name" required>
+                                        <label for="gname">Your Name</label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control bg-light border-0" id="gmail"
+                                            name="email" placeholder="Your Email" required>
+                                        <label for="gmail">Your Email</label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control bg-light border-0" id="cname"
+                                            name="mobile" placeholder="Your Mobile" required>
+                                        <label for="cname">Your Mobile</label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control bg-light border-0" id="cage"
+                                            name="service_type" placeholder="Service Type" required>
+                                        <label for="cage">Service Type</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <textarea class="form-control bg-light border-0" id="message" name="message" placeholder="Leave a message here"
+                                            style="height: 100px"></textarea>
+                                        <label for="message">Message</label>
+                                    </div>
+                                </div>
+                                <div class="col-12 text-center">
+                                    <button class="btn btn-primary py-3 px-4" type="submit">Submit Now</button>
                                 </div>
                             </div>
-                            <div class="col-sm-6">
-                                <div class="form-floating">
-                                    <input type="email" class="form-control bg-light border-0" id="gmail"
-                                        placeholder="Gurdian Email">
-                                    <label for="gmail">Your Email</label>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control bg-light border-0" id="cname"
-                                        placeholder="Child Name">
-                                    <label for="cname">Your Mobile</label>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control bg-light border-0" id="cage"
-                                        placeholder="Child Age">
-                                    <label for="cage">Service Type</label>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-floating">
-                                    <textarea class="form-control bg-light border-0" placeholder="Leave a message here" id="message"
-                                        style="height: 100px"></textarea>
-                                    <label for="message">Message</label>
-                                </div>
-                            </div>
-                            <div class="col-12 text-center">
-                                <button class="btn btn-primary py-3 px-4" type="submit">Submit Now</button>
-                            </div>
-                        </div>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -202,3 +206,33 @@
 
     <!-- Testimonial End -->
 @endsection
+@push('scripts')
+    <script>
+        $(document).ready(function() {
+            $('#quoteForm').on('submit', function(e) {
+                e.preventDefault(); // Stop normal form submit
+
+                $.ajax({
+                    url: '{{ route('admin.inquire.store') }}', // Laravel route
+                    type: "POST",
+                    data: $(this).serialize(), // Send form data
+                    success: function(response) {
+
+                        $('#formAlert').html(
+                            '<div class="alert alert-success mt-3">Your inquiry has been submitted successfully!</div>'
+                        );
+                        $('#quoteForm')[0].reset();
+
+                        // Hide message after 3 seconds
+                        setTimeout(function() {
+                            $('#formAlert').fadeOut();
+                        }, 3000);
+                    },
+                    error: function(xhr) {
+                        alert('Something went wrong. Please try again.');
+                    }
+                });
+            });
+        });
+    </script>
+@endpush

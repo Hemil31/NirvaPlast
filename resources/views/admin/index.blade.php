@@ -5,12 +5,9 @@
         <div class="d-flex align-items-left align-items-md-center flex-column flex-md-row pt-2 pb-4">
             <div>
                 <h3 class="fw-bold mb-3">Dashboard</h3>
-                <h6 class="op-7 mb-2">Free Bootstrap 5 Admin Dashboard</h6>
+                <h6 class="op-7 mb-2">Welcome to Patel Landscaping</h6>
             </div>
-            <div class="ms-md-auto py-2 py-md-0">
-                <a href="#" class="btn btn-label-info btn-round me-2">Manage</a>
-                <a href="#" class="btn btn-primary btn-round">Add Customer</a>
-            </div>
+
         </div>
         <div class="row row-card-no-pd">
             <div class="col-12 col-sm-6 col-md-6 col-xl-3">
@@ -18,8 +15,8 @@
                     <div class="card-body">
                         <div class="d-flex justify-content-between">
                             <div>
-                                <h6><b>Todays Income</b></h6>
-                                <p class="text-muted">All Customs Value</p>
+                                <h6><b>Total Inquiries</b></h6>
+                                <p class="text-muted">All Inquiries Value</p>
                             </div>
                             <h4 class="text-info fw-bold">$170</h4>
                         </div>
