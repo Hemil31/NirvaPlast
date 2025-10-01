@@ -1,61 +1,61 @@
- <div class="container-xxl py-5">
-     <div class="container">
-         <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
-             <p class="fs-5 fw-bold text-primary">Our Team</p>
-             <h1 class="display-5 mb-5">Dedicated & Experienced Team Members</h1>
-         </div>
-         <div class="row g-4">
-             <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                 <div class="team-item rounded">
-                     <img class="img-fluid" src="front/img/team-1.jpg" alt="">
-                     <div class="team-text">
-                         <h4 class="mb-0">Doris Jordan</h4>
-                         <p class="text-primary">Landscape Designer</p>
-                         <div class="team-social d-flex">
-                             <a class="btn btn-square rounded-circle me-2" href=""><i
-                                     class="fab fa-facebook-f"></i></a>
-                             <a class="btn btn-square rounded-circle me-2" href=""><i
-                                     class="fab fa-twitter"></i></a>
-                             <a class="btn btn-square rounded-circle me-2" href=""><i
-                                     class="fab fa-instagram"></i></a>
-                         </div>
-                     </div>
-                 </div>
-             </div>
-             <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                 <div class="team-item rounded">
-                     <img class="img-fluid" src="front/img/team-2.jpg" alt="">
-                     <div class="team-text">
-                         <h4 class="mb-0">Johnny Ramirez</h4>
-                         <p class="text-primary">Garden Designer</p>
-                         <div class="team-social d-flex">
-                             <a class="btn btn-square rounded-circle me-2" href=""><i
-                                     class="fab fa-facebook-f"></i></a>
-                             <a class="btn btn-square rounded-circle me-2" href=""><i
-                                     class="fab fa-twitter"></i></a>
-                             <a class="btn btn-square rounded-circle me-2" href=""><i
-                                     class="fab fa-instagram"></i></a>
-                         </div>
-                     </div>
-                 </div>
-             </div>
-             <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                 <div class="team-item rounded">
-                     <img class="img-fluid" src="front/img/team-3.jpg" alt="">
-                     <div class="team-text">
-                         <h4 class="mb-0">Diana Wagner</h4>
-                         <p class="text-primary">Senior Gardener</p>
-                         <div class="team-social d-flex">
-                             <a class="btn btn-square rounded-circle me-2" href=""><i
-                                     class="fab fa-facebook-f"></i></a>
-                             <a class="btn btn-square rounded-circle me-2" href=""><i
-                                     class="fab fa-twitter"></i></a>
-                             <a class="btn btn-square rounded-circle me-2" href=""><i
-                                     class="fab fa-instagram"></i></a>
-                         </div>
-                     </div>
-                 </div>
-             </div>
-         </div>
-     </div>
- </div>
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
+                <h5 class="fw-bold text-primary text-uppercase">Team Members</h5>
+                <h1 class="mb-0">Professional Stuffs Ready to Help Your Business</h1>
+            </div>
+            <div class="row g-5">
+                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.3s">
+                    <div class="team-item bg-light rounded overflow-hidden">
+                        <div class="team-img position-relative overflow-hidden">
+                            <img class="img-fluid w-100" src="{{ asset('front/img/team-1.jpg') }}" alt="">
+                            <div class="team-social">
+                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-twitter fw-normal"></i></a>
+                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-facebook-f fw-normal"></i></a>
+                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-instagram fw-normal"></i></a>
+                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-linkedin-in fw-normal"></i></a>
+                            </div>
+                        </div>
+                        <div class="text-center py-4">
+                            <h4 class="text-primary">Full Name</h4>
+                            <p class="text-uppercase m-0">Designation</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.6s">
+                    <div class="team-item bg-light rounded overflow-hidden">
+                        <div class="team-img position-relative overflow-hidden">
+                            <img class="img-fluid w-100" src="{{ asset('front/img/team-2.jpg') }}" alt="">
+                            <div class="team-social">
+                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-twitter fw-normal"></i></a>
+                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-facebook-f fw-normal"></i></a>
+                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-instagram fw-normal"></i></a>
+                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-linkedin-in fw-normal"></i></a>
+                            </div>
+                        </div>
+                        <div class="text-center py-4">
+                            <h4 class="text-primary">Full Name</h4>
+                            <p class="text-uppercase m-0">Designation</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.9s">
+                    <div class="team-item bg-light rounded overflow-hidden">
+                        <div class="team-img position-relative overflow-hidden">
+                            <img class="img-fluid w-100" src="{{ asset('front/img/team-3.jpg') }}" alt="">
+                            <div class="team-social">
+                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-twitter fw-normal"></i></a>
+                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-facebook-f fw-normal"></i></a>
+                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-instagram fw-normal"></i></a>
+                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-linkedin-in fw-normal"></i></a>
+                            </div>
+                        </div>
+                        <div class="text-center py-4">
+                            <h4 class="text-primary">Full Name</h4>
+                            <p class="text-uppercase m-0">Designation</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

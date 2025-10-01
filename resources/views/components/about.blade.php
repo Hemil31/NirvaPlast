@@ -1,40 +1,38 @@
-<div class="container-xxl py-5">
-    <div class="container">
-        <div class="row g-5 align-items-end">
-            <div class="col-lg-3 col-md-5 wow fadeInUp" data-wow-delay="0.1s">
-                <img class="img-fluid rounded" data-wow-delay="0.1s" src="front/img/about.jpg">
-            </div>
-            <div class="col-lg-6 col-md-7 wow fadeInUp" data-wow-delay="0.3s">
-                <h1 class="display-1 text-primary mb-0">5+</h1>
-                <p class="text-primary mb-4"> Years of Landscaping Excellence</p>
-                <h1 class="display-5 mb-4">Expertise in Designing and Maintaining Premium Outdoor Environments</h1>
-                <p class="mb-4">With over 25 years of experience, our team delivers tailored landscaping solutions
-                    that combine aesthetics, functionality, and sustainability. From conceptual planning to ongoing
-                    landscape maintenance, we specialize in transforming outdoor spaces into elegant, eco-friendly
-                    environments for residential, commercial, and institutional properties.
-                </p>
-                <a class="btn btn-primary py-3 px-4" href="">Explore More</a>
-            </div>
-            <div class="col-lg-3 col-md-12 wow fadeInUp" data-wow-delay="0.5s">
-                <div class="row g-5">
-                    <div class="col-12 col-sm-6 col-lg-12">
-                        <div class="border-start ps-4">
-                            <i class="fa fa-tree  fa-3x text-primary mb-3"></i>
-                            <h4 class="mb-3">Eco-Friendly Landscaping</h4>
-                            <span>We use sustainable practices and native plants to design landscapes that conserve
-                                water and support local ecosystems</span>
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-7">
+                    <div class="section-title position-relative pb-3 mb-5">
+                        <h5 class="fw-bold text-primary text-uppercase">About Us</h5>
+                        <h1 class="mb-0">The Best IT Solution With 10 Years of Experience</h1>
+                    </div>
+                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum et tempor sit. Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor eirmod magna dolore erat amet</p>
+                    <div class="row g-0 mb-3">
+                        <div class="col-sm-6 wow zoomIn" data-wow-delay="0.2s">
+                            <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>Award Winning</h5>
+                            <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>Professional Staff</h5>
+                        </div>
+                        <div class="col-sm-6 wow zoomIn" data-wow-delay="0.4s">
+                            <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>24/7 Support</h5>
+                            <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>Fair Prices</h5>
                         </div>
                     </div>
-                    <div class="col-12 col-sm-6 col-lg-12">
-                        <div class="border-start ps-4">
-                            <i class="fa fa-mountain  fa-3x text-primary mb-3"></i>
-                            <h4 class="mb-3">Custom Hardscape Design</h4>
-                            <span>From patios to walkways and retaining walls, our team builds durable and stylish
-                                hardscapes tailored to your outdoor space</span>
+                    <div class="d-flex align-items-center mb-4 wow fadeIn" data-wow-delay="0.6s">
+                        <div class="bg-primary d-flex align-items-center justify-content-center rounded" style="width: 60px; height: 60px;">
+                            <i class="fa fa-phone-alt text-white"></i>
                         </div>
+                        <div class="ps-4">
+                            <h5 class="mb-2">Call to ask any question</h5>
+                            <h4 class="text-primary mb-0">+012 345 6789</h4>
+                        </div>
+                    </div>
+                    <a href="quote.html" class="btn btn-primary py-3 px-5 mt-3 wow zoomIn" data-wow-delay="0.9s">Request A Quote</a>
+                </div>
+                <div class="col-lg-5" style="min-height: 500px;">
+                    <div class="position-relative h-100">
+                        <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.9s" src="{{ asset('front/img/about.jpg') }}" style="object-fit: cover;">
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>

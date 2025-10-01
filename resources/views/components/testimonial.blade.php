@@ -1,34 +1,58 @@
-<div class="container-xxl py-5">
-    <div class="container">
-        <div class="row g-5">
-            <div class="col-lg-5 wow fadeInUp" data-wow-delay="0.1s">
-                <p class="fs-5 fw-bold text-primary">Testimonial</p>
-                <h1 class="display-5 mb-5">What Our Happy Clients Are Saying</h1>
-                <p class="mb-4"> From transforming backyards into lush escapes to maintaining beautiful garden spaces,
-                    our clients love the care and detail we bring to every project. Hear their stories and see why they
-                    trust us for all their landscaping needs.</p>
-                <a class="btn btn-primary py-3 px-4" href="">View All Testimonials</a>
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="section-title text-center position-relative pb-3 mb-4 mx-auto" style="max-width: 600px;">
+                <h5 class="fw-bold text-primary text-uppercase">Testimonial</h5>
+                <h1 class="mb-0">What Our Clients Say About Our Digital Services</h1>
             </div>
-            <div class="col-lg-7 wow fadeInUp" data-wow-delay="0.5s">
-                <div class="owl-carousel testimonial-carousel">
-                    <div class="testimonial-item">
-                        <img class="img-fluid rounded mb-3" src="front/img/testimonial-1.jpg" alt="">
-                        <p class="fs-5">We hired GreenScape for a complete front yard makeover. They turned our dull
-                            space into a vibrant garden! Professional, friendly, and skilled team.
-                        </p>
-                        <h4>Ravina Patel</h4>
-                        <span>Homeowner</span>
+            <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.6s">
+                <div class="testimonial-item bg-light my-4">
+                    <div class="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
+                        <img class="img-fluid rounded" src="{{ asset('front/img/testimonial-1.jpg') }}" style="width: 60px; height: 60px;" >
+                        <div class="ps-4">
+                            <h4 class="text-primary mb-1">Client Name</h4>
+                            <small class="text-uppercase">Profession</small>
+                        </div>
                     </div>
-                    <div class="testimonial-item">
-                        <img class="img-fluid rounded mb-3" src="front/img/testimonial-2.jpg" alt="">
-                        <p class="fs-5">Excellent service and on-time delivery! Our garden has never looked better.
-                            We’ve received so many compliments from guests and neighbors.
-                        </p>
-                        <h4>Hemil Dudhat</h4>
-                        <span>Villa Owner</span>
+                    <div class="pt-4 pb-5 px-5">
+                        Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam
+                    </div>
+                </div>
+                <div class="testimonial-item bg-light my-4">
+                    <div class="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
+                        <img class="img-fluid rounded" src="{{ asset('front/img/testimonial-2.jpg') }}" style="width: 60px; height: 60px;" >
+                        <div class="ps-4">
+                            <h4 class="text-primary mb-1">Client Name</h4>
+                            <small class="text-uppercase">Profession</small>
+                        </div>
+                    </div>
+                    <div class="pt-4 pb-5 px-5">
+                        Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam
+                    </div>
+                </div>
+                <div class="testimonial-item bg-light my-4">
+                    <div class="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
+                        <img class="img-fluid rounded" src="{{ asset('front/img/testimonial-3.jpg') }}" style="width: 60px; height: 60px;" >
+                        <div class="ps-4">
+                            <h4 class="text-primary mb-1">Client Name</h4>
+                            <small class="text-uppercase">Profession</small>
+                        </div>
+                    </div>
+                    <div class="pt-4 pb-5 px-5">
+                        Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam
+                    </div>
+                </div>
+                <div class="testimonial-item bg-light my-4">
+                    <div class="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
+                        <img class="img-fluid rounded" src="{{ asset('front/img/testimonial-4.jpg') }}" style="width: 60px; height: 60px;" >
+                        <div class="ps-4">
+                            <h4 class="text-primary mb-1">Client Name</h4>
+                            <small class="text-uppercase">Profession</small>
+                        </div>
+                    </div>
+                    <div class="pt-4 pb-5 px-5">
+                        Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>

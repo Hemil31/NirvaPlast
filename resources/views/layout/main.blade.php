@@ -27,23 +27,13 @@
 
     @yield('content')
 
-
     <!-- Footer Start -->
     @include('layout.footer')
     <!-- Footer End -->
 
-
-    <!-- Copyright Start -->
-    @include('layout.copyright')
-
-    <!-- Copyright End -->
-
-
     <!-- Back to Top -->
     @include('layout.backtotop')
     <!-- back to top Done -->
-
-
 
     <!-- JavaScript Libraries -->
     @include('layout.js')
