@@ -5,5 +5,5 @@
 @section('content')
     @include('components.about')
     @include('components.team')
-    @include('components.testimonial')
+    @include('components.vendor')
 @endsection

@@ -4,58 +4,85 @@
 @section('breadcrumbActive', 'Contact')
 @section('content')
     <!-- Contact Start -->
-    <div class="container-xxl py-5">
-        <div class="container">
+    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
+                <h5 class="fw-bold text-primary text-uppercase">Contact Us</h5>
+                <h1 class="mb-0">If You Have Any Query, Feel Free To Contact Us</h1>
+            </div>
+            <div class="row g-5 mb-5">
+                <div class="col-lg-4 col-md-6">
+                    <div class="d-flex align-items-start wow fadeIn" data-wow-delay="0.1s">
+                        <div class="bg-primary d-flex align-items-center justify-content-center rounded"
+                            style="width: 60px; height: 60px; flex-shrink: 0;">
+                            <i class="fa fa-phone-alt text-white"></i>
+                        </div>
+                        <div class="ps-3">
+                            <h5 class="mb-1">Call to ask any question</h5>
+                            <h4 class="text-primary mb-0">{{ config('constants.phone') }}</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="d-flex align-items-start wow fadeIn" data-wow-delay="0.4s">
+                        <div class="bg-primary d-flex align-items-center justify-content-center rounded"
+                            style="width: 60px; height: 60px; flex-shrink: 0;">
+                            <i class="fa fa-envelope-open text-white"></i>
+                        </div>
+                        <div class="ps-3">
+                            <h5 class="mb-1">Email to get free quote</h5>
+                            <h4 class="text-primary mb-0">{{ config('constants.email') }}</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-12">
+                    <div class="d-flex align-items-start wow fadeIn" data-wow-delay="0.8s">
+                        <div class="bg-primary d-flex align-items-center justify-content-center rounded"
+                            style="width: 60px; height: 60px; flex-shrink: 0;">
+                            <i class="fa fa-map-marker-alt text-white"></i>
+                        </div>
+                        <div class="ps-3">
+                            <h5 class="mb-1">Visit our office</h5>
+                            <h4 class="text-primary mb-0" style="font-size: 12px;">
+                                {{ config('constants.address') }}
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <div class="row g-5">
-                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-                    <p class="fs-5 fw-bold text-primary">Get In Touch</p>
-                    <h1 class="display-5 mb-5">Have a Question? We’re Here to Help!</h1>
-                    <p class="mb-4"> Whether you're looking for expert landscaping advice, need a custom quote, or just
-                        have a quick question—feel free to reach out to us.
-                        Simply fill out the form below and our team will get back to you as soon as possible.</a></p>
-                    <form id="contactForm">
-                        @csrf
+                <div class="col-lg-6 wow slideInUp" data-wow-delay="0.3s">
+                    <form>
                         <div class="row g-3">
                             <div class="col-md-6">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control" id="name" name="name"
-                                        placeholder="Your Name">
-                                    <label for="name">Your Name</label>
-                                </div>
+                                <input type="text" class="form-control border-0 bg-light px-4" placeholder="Your Name"
+                                    style="height: 55px;">
                             </div>
                             <div class="col-md-6">
-                                <div class="form-floating">
-                                    <input type="email" class="form-control" id="email" name="email"
-                                        placeholder="Your Email">
-                                    <label for="email">Your Email</label>
-                                </div>
+                                <input type="email" class="form-control border-0 bg-light px-4" placeholder="Your Email"
+                                    style="height: 55px;">
                             </div>
                             <div class="col-12">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject">
-                                    <label for="subject">Subject</label>
-                                </div>
+                                <input type="text" class="form-control border-0 bg-light px-4" placeholder="Subject"
+                                    style="height: 55px;">
                             </div>
                             <div class="col-12">
-                                <div class="form-floating">
-                                    <textarea class="form-control" placeholder="Leave a message here" id="message" name="message" style="height: 100px"></textarea>
-                                    <label for="message">Message</label>
-                                </div>
+                                <textarea class="form-control border-0 bg-light px-4 py-3" rows="4" placeholder="Message"></textarea>
                             </div>
-                            <div class="col-12" id="formAlert"></div>
                             <div class="col-12">
-                                <button class="btn btn-primary py-3 px-4" type="submit">Send Message</button>
+                                <button class="btn btn-primary w-100 py-3" type="submit">Send Message</button>
                             </div>
                         </div>
                     </form>
                 </div>
-                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s" style="min-height: 450px;">
-                    <div class="position-relative rounded overflow-hidden h-100">
-                        <iframe class="position-relative w-100 h-100"
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53123.34941469644!2d150.82903001732615!3d-33.67764328708806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b129e4c6f28fb8b%3A0xf017d68f9f161d0!2sRouse%20Hill%20Regional%20Park!5e0!3m2!1sen!2sin!4v1753509275991!5m2!1sen!2sin"
-                            frameborder="0" style="min-height: 450px; border:0;" allowfullscreen="" aria-hidden="false"
-                            tabindex="0"></iframe>
-                    </div>
+                <div class="col-lg-6 wow slideInUp" data-wow-delay="0.6s">
+                    <iframe class="position-relative rounded w-100 h-100"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59353.35139864182!2d72.97839400707737!3d21.602137438672045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be023ee0952c0db%3A0xf1283c1db0aa4b04!2sGolden%20Square!5e0!3m2!1sen!2sin!4v1750231955091!5m2!1sen!2sin"
+                        frameborder="0" style="min-height: 350px; border:0;" allowfullscreen="" aria-hidden="false"
+                        tabindex="0"></iframe>
                 </div>
             </div>
         </div>

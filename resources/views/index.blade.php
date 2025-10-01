@@ -9,8 +9,8 @@
                     <img class="w-100" src="{{ asset('front/img/carousel-1.jpg') }}" alt="Image">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="p-3" style="max-width: 900px;">
-                            <h5 class="text-white text-uppercase mb-3 animated slideInDown">Creative & Innovative</h5>
-                            <h1 class="display-1 text-white mb-md-4 animated zoomIn">Creative & Innovative Digital Solution
+                            <h5 class="text-white text-uppercase mb-3 animated slideInDown">Reliable & Professional</h5>
+                            <h1 class="display-1 text-white mb-md-4 animated zoomIn">Excellence in Chemical Trading Worldwide
                             </h1>
                             <a href="quote.html" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Free
                                 Quote</a>
@@ -24,7 +24,7 @@
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="p-3" style="max-width: 900px;">
                             <h5 class="text-white text-uppercase mb-3 animated slideInDown">Creative & Innovative</h5>
-                            <h1 class="display-1 text-white mb-md-4 animated zoomIn">Creative & Innovative Digital Solution
+                            <h1 class="display-1 text-white mb-md-4 animated zoomIn">Connecting Global Markets with Quality Chemicals
                             </h1>
                             <a href="quote.html" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Free
                                 Quote</a>
@@ -104,33 +104,3 @@
 
     <!-- vendor End -->
 @endsection
-@push('scripts')
-    <script>
-        $(document).ready(function() {
-            $('#quoteForm').on('submit', function(e) {
-                e.preventDefault(); // Stop normal form submit
-
-                $.ajax({
-                    url: '{{ route('admin.inquire.store') }}', // Laravel route
-                    type: "POST",
-                    data: $(this).serialize(), // Send form data
-                    success: function(response) {
-
-                        $('#formAlert').html(
-                            '<div class="alert alert-success mt-3">Your inquiry has been submitted successfully!</div>'
-                        );
-                        $('#quoteForm')[0].reset();
-
-                        // Hide message after 3 seconds
-                        setTimeout(function() {
-                            $('#formAlert').fadeOut();
-                        }, 3000);
-                    },
-                    error: function(xhr) {
-                        alert('Something went wrong. Please try again.');
-                    }
-                });
-            });
-        });
-    </script>
-@endpush

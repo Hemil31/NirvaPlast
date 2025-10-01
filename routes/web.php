@@ -22,6 +22,10 @@ Route::get('/project', function () {
     return view('project');
 })->name('project-page');
 
+Route::get('/product', function () {
+    return view('product');
+})->name('product-page');
+
 Route::get('/contact', function () {
     return view('contact');
 })->name('contact-page');

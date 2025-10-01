@@ -1,8 +1,8 @@
 <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
         <div class="container py-5">
             <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
-                <h5 class="fw-bold text-primary text-uppercase">Team Members</h5>
-                <h1 class="mb-0">Professional Stuffs Ready to Help Your Business</h1>
+                <h5 class="fw-bold text-primary text-uppercase">Our Team</h5>
+                <h1 class="mb-0">Professional Experts Ready to Support You</h1>
             </div>
             <div class="row g-5">
                 <div class="col-lg-4 wow slideInUp" data-wow-delay="0.3s">
@@ -17,8 +17,8 @@
                             </div>
                         </div>
                         <div class="text-center py-4">
-                            <h4 class="text-primary">Full Name</h4>
-                            <p class="text-uppercase m-0">Designation</p>
+                            <h4 class="text-primary">Jenish Kathiriya</h4>
+                            <p class="text-uppercase m-0">Founder & Director</p>
                         </div>
                     </div>
                 </div>
@@ -34,8 +34,8 @@
                             </div>
                         </div>
                         <div class="text-center py-4">
-                            <h4 class="text-primary">Full Name</h4>
-                            <p class="text-uppercase m-0">Designation</p>
+                            <h4 class="text-primary">Rency Varni</h4>
+                            <p class="text-uppercase m-0">Operations Head</p>
                         </div>
                     </div>
                 </div>
@@ -51,8 +51,8 @@
                             </div>
                         </div>
                         <div class="text-center py-4">
-                            <h4 class="text-primary">Full Name</h4>
-                            <p class="text-uppercase m-0">Designation</p>
+                            <h4 class="text-primary">Dudhat Hemil</h4>
+                            <p class="text-uppercase m-0">Business Development</p>
                         </div>
                     </div>
                 </div>
