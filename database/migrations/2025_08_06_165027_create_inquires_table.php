@@ -15,7 +15,6 @@ return new class extends Migration {
             $table->string('name')->nullable();
             $table->string('email')->nullable();
             $table->string('mobile')->nullable();
-            $table->string('service_type')->nullable();
             $table->text('message')->nullable();
             $table->tinyInteger('status')->default('1'); // Added status field with default value
             $table->timestamps();

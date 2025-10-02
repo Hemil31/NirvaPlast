@@ -11,12 +11,11 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('blogs', function (Blueprint $table) {
+        Schema::create('products', function (Blueprint $table) {
             $table->id();
-            $table->string('blog_heading');
-            $table->date('blog_date');
-            $table->string('image')->nullable();
-            $table->text('content')->nullable();
+            $table->string('product_name');
+            $table->string('file_path');
+            $table->unsignedInteger('status')->default(1);
             $table->timestamps();
             $table->softDeletes();
         });

@@ -31,14 +31,13 @@ class InquireController extends Controller
     public function store(Request $request)
     {
 
-        // dd($request->all());
+
 
 
         Inquire::create([
             'name' => $request->name,
             'email' => $request->email,
-            'mobile' => $request->mobile,
-            'service_type' => $request->service_type ?? null,
+            'mobile' => $request->country_code . " " . $request->mobile,
             'message' => $request->message,
         ]);
 

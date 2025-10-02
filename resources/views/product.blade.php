@@ -34,7 +34,7 @@
 
                         <!-- Product Image -->
                         <div class="product-image-container mt-4">
-                            <img src="{{ asset('images/01.png   ') }}" alt="Chemical Products" class="img-fluid">
+                            <img src="{{ asset('images/011.jpg') }}" alt="Chemical Products" class="img-fluid">
                         </div>
                     </div>
                 </div>
@@ -44,27 +44,28 @@
                     <div class="products-grid">
                         <div class="row">
                             <!-- Column 1 -->
-                            <div class="col-md-6">
+                            @php
+                                $half = ceil($products->count() / 2);
+                                $chunks = $products->chunk($half);
+                            @endphp
+
+                            @foreach ($chunks as $chunk)
+                                <div class="col-md-6">
+                                    <div class="product-column">
+                                        <ul class="product-list">
+                                            @foreach ($chunk as $product)
+                                                <li class="product-item" onclick="window.open('{{ Storage::url($product->file_path) }}', '_blank')">{{ $product->product_name }}</li>
+                                            @endforeach
+                                        </ul>
+                                    </div>
+                                </div>
+                            @endforeach
+                            {{-- <div class="col-md-6">
                                 <div class="product-column">
                                     <ul class="product-list">
-                                        <li class="product-item">ACETIC ACID</li>
-                                        <li class="product-item">ACETONE</li>
-                                        <li class="product-item">ALUMINIUM SULPHATE</li>
-                                        <li class="product-item">BORAX DECAHYDRATE</li>
-                                        <li class="product-item">BORIC ACID</li>
-                                        <li class="product-item">CALCIUM HYPOCHLORIDE</li>
-                                        <li class="product-item">CAUSTIC POTASH</li>
-                                        <li class="product-item">CAUSTIC SODA FLAKES</li>
-                                        <li class="product-item">CAUSTIC SODA LYE</li>
-                                        <li class="product-item">CAUSTIC SODA PRILLS</li>
-                                        <li class="product-item">DOLAMITE POWDER</li>
-                                        <li class="product-item">FORMALDEHYDE</li>
-                                        <li class="product-item">FORMIC ACID</li>
-                                        <li class="product-item">HYDRATED LIME POWDER</li>
-                                        <li class="product-item">HYDROCHLORIC ACID</li>
-                                        <li class="product-item">HYDROFLUORIC ACID</li>
-                                        <li class="product-item">HYDROGEN PEROXIDE</li>
-                                        <li class="product-item">ISOPROPYL ALCOHOLIPA</li>
+                                        <li class="product-item" onclick="window.open('https://aelchementerprises.in/image/Acetic-Acid.pdf', '_blank')">ACETIC ACID</li>
+                                        <li class="product-item" onclick="window.open('https://aelchementerprises.in/image/Acetone.pdf', '_blank')">ACETONE</li>
+                                        <li class="product-item" onclick="window.open('https://aelchementerprises.in/image/Aluminium-Sulphate.pdf', '_blank')">ALUMINIUM SULPHATE</li>
                                     </ul>
                                 </div>
                             </div>
@@ -76,24 +77,9 @@
                                         <li class="product-item">ACID SLURRY (LABSA)</li>
                                         <li class="product-item">IODOPHOR</li>
                                         <li class="product-item">NITRIC ACID - STRONG - 72%</li>
-                                        <li class="product-item">NITRIC ACID – WEAK - 60%</li>
-                                        <li class="product-item">ORTHOPHOSPHORIC ACID - FOOD</li>
-                                        <li class="product-item">ORTHOPHOSPHORIC ACID - TECH</li>
-                                        <li class="product-item">POLY ALUMINIUM CHLORIDE</li>
-                                        <li class="product-item">POTASSIUM PERMANGANATE</li>
-                                        <li class="product-item">PROPYLENE GLYCOL</li>
-                                        <li class="product-item">SODA ASH</li>
-                                        <li class="product-item">SODIUM BICARBONATE REFINED</li>
-                                        <li class="product-item">SODIUM HYPOCHLORITE</li>
-                                        <li class="product-item">SODIUM METABISULPHITE</li>
-                                        <li class="product-item">SODIUM NITRATE</li>
-                                        <li class="product-item">SODIUM SULPHATE - FOOD</li>
-                                        <li class="product-item">SULPHURIC ACID - BATTERY</li>
-                                        <li class="product-item">SULPHURIC ACID - TECHNICAL</li>
-                                        <li class="product-item">TRISODIUM PHOSPHATE</li>
                                     </ul>
                                 </div>
-                            </div>
+                            </div> --}}
                         </div>
                     </div>
                 </div>

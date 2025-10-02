@@ -11,10 +11,14 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto py-0">
-                <a href="{{ route('home-page') }}" class="nav-item nav-link {{ request()->is('/') ? 'active' : '' }}">Home</a>
-                <a href="{{ route('product-page') }}" class="nav-item nav-link {{ request()->is('product') ? 'active' : '' }}">Products</a>
-                <a href="{{ route('service-page') }}" class="nav-item nav-link {{ request()->is('service') ? 'active' : '' }}">Services</a>
-                <a href="{{ route('about-page') }}" class="nav-item nav-link {{ request()->is('about') ? 'active' : '' }}">About</a>
+                <a href="{{ route('home-page') }}"
+                    class="nav-item nav-link {{ request()->is('/') ? 'active' : '' }}">Home</a>
+                <a href="{{ route('product-page') }}"
+                    class="nav-item nav-link {{ request()->is('product') ? 'active' : '' }}">Products</a>
+                <a href="{{ route('service-page') }}"
+                    class="nav-item nav-link {{ request()->is('service') ? 'active' : '' }}">Services</a>
+                <a href="{{ route('about-page') }}"
+                    class="nav-item nav-link {{ request()->is('about') ? 'active' : '' }}">About</a>
                 {{-- <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Blog</a>
                     <div class="dropdown-menu m-0">
@@ -32,12 +36,18 @@
                         <a href="quote.html" class="dropdown-item">Free Quote</a>
                     </div>
                 </div> --}}
-                <a href="{{ route('contact-page') }}" class="nav-item nav-link {{ request()->is('contact') ? 'active' : '' }}">Contact</a>
+                <a href="{{ route('contact-page') }}"
+                    class="nav-item nav-link {{ request()->is('contact') ? 'active' : '' }}">Contact</a>
             </div>
             {{-- <butaton type="button" class="btn text-primary ms-3" data-bs-toggle="modal" data-bs-target="#searchModal">
                 <i class="fa fa-search"></i></butaton>
             <a href="https://htmlcodex.com/startup-company-website-template"
                 class="btn btn-primary py-2 px-4 ms-3">Download Pro Version</a> --}}
+
+            <a href="tel:{{ config('constants.phone') }}" class="btn btn-primary py-2 px-4 ms-3">
+                <i class="fas fa-phone-alt"></i>
+                Call Anytime
+            </a>
         </div>
     </nav>
 

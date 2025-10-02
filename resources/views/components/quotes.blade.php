@@ -37,30 +37,49 @@
             </div>
             <div class="col-lg-5">
                 <div class="bg-primary rounded h-100 d-flex align-items-center p-5 wow zoomIn" data-wow-delay="0.9s">
-                    <form>
+                    <form id="contactForm">
+                        @csrf
                         <div class="row g-3">
                             <div class="col-xl-12">
-                                <input type="text" class="form-control bg-light border-0" placeholder="Your Name"
+                                <input type="text" name="name" class="form-control bg-light border-0" placeholder="Your Name"
                                     style="height: 55px;">
                             </div>
                             <div class="col-12">
-                                <input type="email" class="form-control bg-light border-0" placeholder="Your Email"
+                                <input type="email" name="email" class="form-control bg-light border-0" placeholder="Your Email"
                                     style="height: 55px;">
                             </div>
-                            <div class="col-12">
-                                <select class="form-select bg-light border-0" style="height: 55px;">
-                                    <option selected>Select A Service</option>
-                                    <option value="1">Service 1</option>
-                                    <option value="2">Service 2</option>
-                                    <option value="3">Service 3</option>
+                            <div class="col-4">
+                                <select class="form-select bg-light border-0" name="country_code" style="height: 55px;">
+                                    <option value="+91" selected>🇮🇳 +91</option>
+                                    <option value="+1">🇺🇸 +1</option>
+                                    <option value="+44">🇬🇧 +44</option>
+                                    <option value="+61">🇦🇺 +61</option>
+                                    <option value="+971">🇦🇪 +971</option>
                                 </select>
                             </div>
+                            <div class="col-8">
+                                <input type="tel" class="form-control bg-light border-0" name="mobile" placeholder="Mobile No." style="height: 55px;">
+                            </div>
                             <div class="col-12">
-                                <textarea class="form-control bg-light border-0" rows="3" placeholder="Message"></textarea>
+                                <textarea class="form-control bg-light border-0" rows="3" name="message" placeholder="Message"></textarea>
                             </div>
                             <div class="col-12">
                                 <button class="btn btn-dark w-100 py-3" type="submit">Request A Quote</button>
                             </div>
+                            {{-- <div class="col-3">
+                                <select class="form-control border-0 bg-light px-4" style="height: 55px;">
+                                    <option value="+91" selected>🇮🇳 +91</option>
+                                    <option value="+1">🇺🇸 +1</option>
+                                    <option value="+44">🇬🇧 +44</option>
+                                    <option value="+61">🇦🇺 +61</option>
+                                    <option value="+971">🇦🇪 +971</option>
+                                    <!-- Add more as needed -->
+                                </select>
+                            </div>
+                            <div class="col-9">
+                                <input type="tel" class="form-control border-0 bg-light px-4" placeholder="Mobile No."
+                                    maxlength="10" style="height: 55px;">
+                            </div> --}}
                         </div>
                     </form>
                 </div>
@@ -68,3 +87,34 @@
         </div>
     </div>
 </div>
+@push('scripts')
+    <script>
+        $(document).ready(function() {
+            $('#contactForm').on('submit', function(e) {
+                e.preventDefault();
+
+                $.ajax({
+                    type: 'POST',
+                    url: '{{ route('admin.inquire.store') }}',
+                    data: $(this).serialize(),
+                    success: function(response) {
+                        $('#formAlert').html(
+                            '<div class="alert alert-success mt-3">Your inquiry has been submitted successfully!</div>'
+                        );
+                        $('#contactForm')[0].reset();
+
+                        // Hide message after 3 seconds
+                        setTimeout(function() {
+                            $('#formAlert').fadeOut();
+                        }, 3000);
+                    },
+                    error: function(xhr) {
+                        $('#formAlert').html(
+                            '<div class="alert alert-danger mt-3">There was an error submitting your inquiry. Please try again later.</div>'
+                        );
+                    }
+                });
+            });
+        });
+    </script>
+@endpush

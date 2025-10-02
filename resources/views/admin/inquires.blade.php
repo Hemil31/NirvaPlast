@@ -33,15 +33,15 @@
                     </div>
                     <div class="card-body">
                         <div class="table-responsive">
-                            <table id="inquire-datatables" class="display table table-striped table-hover">
+                            <table id="inquire-datatables" class="display table table-striped table-hover" style="width: 100%">
                                 <thead>
                                     <tr>
-                                        <th>Sr</th>
-                                        <th>Name</th>
-                                        <th>Email</th>
-                                        <th>Mobile</th>
-                                        <th>Service Type</th>
-                                        <th>Message</th>
+                                        <th style="width: 8%">Sr</th>
+                                        <th style="width: 20%">Name</th>
+                                        <th style="width: 25%">Email</th>
+                                        <th style="width: 15%">Mobile</th>
+                                        {{-- <th>Service Type</th> --}}
+                                        <th style="width: 32%">Message</th>
                                         {{-- <th>Actions</th> --}}
                                     </tr>
                                 </thead>
@@ -53,12 +53,12 @@
                                     @endempty
                                     @foreach ($inquires as $inquire)
                                         <tr>
-                                            <td>{{ $loop->iteration }}</td>
-                                            <td>{{ $inquire->name ?? null }}</td>
-                                            <td>{{ $inquire->email ?? null }}</td>
-                                            <td>{{ $inquire->mobile ?? null }}</td>
-                                            <td>{{ $inquire->service_type ?? null }}</td>
-                                            <td>{{ $inquire->message ?? null }}</td>
+                                            <td style="width: 8%">{{ $loop->iteration }}</td>
+                                            <td style="width: 20%; word-wrap: break-word;">{{ $inquire->name ?? null }}</td>
+                                            <td style="width: 25%; word-wrap: break-word;">{{ $inquire->email ?? null }}</td>
+                                            <td style="width: 15%; word-wrap: break-word;">{{ $inquire->mobile ?? null }}</td>
+                                            {{-- <td>{{ $inquire->service_type ?? null }}</td> --}}
+                                            <td style="width: 32%; word-wrap: break-word; max-width: 200px;">{{ $inquire->message ?? null }}</td>
                                             {{-- <td>
                                                 <a href="{{ route('admin-inquire-edit-page', $inquire->id) }}"
                                                     class="btn btn-warning btn-sm">Edit</a>
@@ -90,6 +90,14 @@
                 "ordering": true,
                 "info": true,
                 "autoWidth": false,
+                "columnDefs": [
+                    { "width": "8%", "targets": 0 },
+                    { "width": "20%", "targets": 1 },
+                    { "width": "25%", "targets": 2 },
+                    { "width": "15%", "targets": 3 },
+                    { "width": "32%", "targets": 4 }
+                ],
+                "fixedColumns": true
             });
         });
     </script>

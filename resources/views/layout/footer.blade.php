@@ -85,7 +85,7 @@
                                     class="bi bi-arrow-right text-primary me-2"></i>Fast & Secure Delivery</a>
                             <a class="text-light mb-2" href="#"><i
                                     class="bi bi-arrow-right text-primary me-2"></i>Industrial Chemical Solutions</a>
-                            <a class="text-light" href="#"><i
+                            <a class="text-light" href="{{ route('contact-page') }}"><i
                                     class="bi bi-arrow-right text-primary me-2"></i>Request a Free Quote</a>
                         </div>
                     </div>

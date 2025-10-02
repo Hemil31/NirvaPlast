@@ -34,10 +34,10 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="{{ route('admin-blog-page') }}">
+                    <a href="{{ route('admin-product-page') }}">
                         <i class="fas fa-file"></i>
-                        <p>Blog</p>
-                        {{-- <span class="badge badge-secondary">1</span> --}}
+                        <p>Product</p>
+                            
                     </a>
                 </li>
                 <li class="nav-item">

@@ -55,22 +55,34 @@
 
             <div class="row g-5">
                 <div class="col-lg-6 wow slideInUp" data-wow-delay="0.3s">
-                    <form>
+                    <form id="contactForm">
+                        @csrf
                         <div class="row g-3">
                             <div class="col-md-6">
-                                <input type="text" class="form-control border-0 bg-light px-4" placeholder="Your Name"
-                                    style="height: 55px;">
+                                <input type="text" name="name" class="form-control border-0 bg-light px-4"
+                                    placeholder="Your Name" style="height: 55px;" required>
                             </div>
                             <div class="col-md-6">
-                                <input type="email" class="form-control border-0 bg-light px-4" placeholder="Your Email"
-                                    style="height: 55px;">
+                                <input type="email" name="email" class="form-control border-0 bg-light px-4"
+                                    placeholder="Your Email" style="height: 55px;" required>
+                            </div>
+                            <div class="col-3">
+                                <select class="form-control border-0 bg-light px-4" name="country_code"
+                                    style="height: 55px;" required>
+                                    <option value="+91" selected>🇮🇳 +91</option>
+                                    <option value="+1">🇺🇸 +1</option>
+                                    <option value="+44">🇬🇧 +44</option>
+                                    <option value="+61">🇦🇺 +61</option>
+                                    <option value="+971">🇦🇪 +971</option>
+                                    <!-- Add more as needed -->
+                                </select>
+                            </div>
+                            <div class="col-9">
+                                <input type="" class="form-control border-0 bg-light px-4" name="mobile"
+                                    placeholder="Mobile No." maxlength="10" style="height: 55px;" required>
                             </div>
                             <div class="col-12">
-                                <input type="text" class="form-control border-0 bg-light px-4" placeholder="Subject"
-                                    style="height: 55px;">
-                            </div>
-                            <div class="col-12">
-                                <textarea class="form-control border-0 bg-light px-4 py-3" rows="4" placeholder="Message"></textarea>
+                                <textarea class="form-control border-0 bg-light px-4 py-3" rows="4" name="message" placeholder="Message" required></textarea>
                             </div>
                             <div class="col-12">
                                 <button class="btn btn-primary w-100 py-3" type="submit">Send Message</button>

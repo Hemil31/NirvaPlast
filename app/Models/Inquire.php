@@ -13,10 +13,9 @@ class Inquire extends Model
         'name',
         'email',
         'mobile',
-        'service_type',
         'message',
         'status'
     ];
 
-    
+
 }
