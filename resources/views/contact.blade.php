@@ -14,12 +14,13 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="d-flex align-items-start wow fadeIn" data-wow-delay="0.1s">
                         <div class="bg-primary d-flex align-items-center justify-content-center rounded"
-                            style="width: 60px; height: 60px; flex-shrink: 0;">
-                            <i class="fa fa-phone-alt text-white"></i>
+                            style="width: 70px; height: 70px; flex-shrink: 0;">
+                            <i class="fa fa-phone-alt text-white" style="font-size: 24px;"></i>
                         </div>
                         <div class="ps-3">
                             <h5 class="mb-1">Call to ask any question</h5>
-                            <h4 class="text-primary mb-0">{{ config('constants.phone') }}</h4>
+                            <h4 class="text-primary mb-0" style="font-size: 18px;">{{ config('constants.phone') }}</h4>
+                            <h4 class="text-primary mb-0" style="font-size: 18px;">{{ config('constants.phone2') }}</h4>
                         </div>
                     </div>
                 </div>
@@ -27,12 +28,13 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="d-flex align-items-start wow fadeIn" data-wow-delay="0.4s">
                         <div class="bg-primary d-flex align-items-center justify-content-center rounded"
-                            style="width: 60px; height: 60px; flex-shrink: 0;">
-                            <i class="fa fa-envelope-open text-white"></i>
+                            style="width: 70px; height: 70px; flex-shrink: 0;">
+                            <i class="fa fa-envelope-open text-white" style="font-size: 24px;"></i>
                         </div>
                         <div class="ps-3">
                             <h5 class="mb-1">Email to get free quote</h5>
-                            <h4 class="text-primary mb-0">{{ config('constants.email') }}</h4>
+                            <h4 class="text-primary mb-0" style="font-size: 18px;">{{ config('constants.email') }}</h4>
+                            <h4 class="text-primary mb-0" style="font-size: 18px;">{{ config('constants.email2') }}</h4>
                         </div>
                     </div>
                 </div>
@@ -40,12 +42,12 @@
                 <div class="col-lg-4 col-md-12">
                     <div class="d-flex align-items-start wow fadeIn" data-wow-delay="0.8s">
                         <div class="bg-primary d-flex align-items-center justify-content-center rounded"
-                            style="width: 60px; height: 60px; flex-shrink: 0;">
-                            <i class="fa fa-map-marker-alt text-white"></i>
+                            style="width: 70px; height: 70px; flex-shrink: 0;">
+                            <i class="fa fa-map-marker-alt text-white" style="font-size: 24px;"></i>
                         </div>
                         <div class="ps-3">
                             <h5 class="mb-1">Visit our office</h5>
-                            <h4 class="text-primary mb-0" style="font-size: 12px;">
+                            <h4 class="text-primary mb-0" style="font-size: 18px;">
                                 {{ config('constants.address') }}
                             </h4>
                         </div>
