@@ -72,6 +72,11 @@
 
     <!-- Service End -->
 
+    <!-- Products Start -->
+
+    @include('components.products')
+
+    <!-- Products End -->
 
     <!-- Quote Start -->
 

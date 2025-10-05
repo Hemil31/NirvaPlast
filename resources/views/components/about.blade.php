@@ -40,7 +40,7 @@
             <div class="col-lg-5" style="min-height: 500px;">
                 <div class="position-relative h-100">
                     <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.9s"
-                        src="{{ asset('front/img/about.jpg') }}" style="object-fit: cover;">
+                        src="{{ asset('front/img/about.png') }}" style="object-fit: cover;">
                 </div>
             </div>
         </div>

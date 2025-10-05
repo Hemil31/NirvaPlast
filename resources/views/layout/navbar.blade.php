@@ -1,9 +1,10 @@
 <div class="container-fluid position-relative p-0">
     <nav class="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0">
         <a href="{{ route('home-page') }}" class="navbar-brand p-0" id="logo-link">
-            <h1 class="m-0" id="logo-text">
+            <h1 class="m-0 d-flex align-items-center" id="logo-text">
                 <img src="{{ asset('images/logo.png') }}" alt="Logo" width="52" height="69">
-                <span style="color:#183e68;">MAITRII E</span><span style="color:#3db0ac;">NTERPRISE</span>
+                <span style="color:#183e68; margin-left: 8px;">MAITRII E</span>
+                <span style="color:#3db0ac;">NTERPRISE</span>
             </h1>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
