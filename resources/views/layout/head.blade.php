@@ -39,7 +39,7 @@
         /* Standard mobile tablets (768px and below) */
         @media (max-width: 768px) {
             #logo-text {
-                font-size: 20px !important;
+                font-size: 24px !important;
             }
 
             #logo-text img {
@@ -55,7 +55,7 @@
         /* Small mobile phones (480px and below) */
         @media (max-width: 480px) {
             #logo-text {
-                font-size: 16px !important;
+                font-size: 20px !important;
                 flex-direction: row !important;
                 align-items: center !important;
             }
@@ -83,7 +83,7 @@
         /* Ultra-small screens (409px and below) */
         @media (max-width: 409px) {
             #logo-text {
-                font-size: 14px !important;
+                font-size: 18px !important;
                 white-space: nowrap !important;
             }
 
@@ -122,7 +122,7 @@
         /* Extra small screens (360px and below) */
         @media (max-width: 360px) {
             #logo-text {
-                font-size: 12px !important;
+                font-size: 16px !important;
             }
 
             #logo-text img {
@@ -142,7 +142,7 @@
         /* Tiny screens (320px and below) */
         @media (max-width: 320px) {
             #logo-text {
-                font-size: 11px !important;
+                font-size: 14px !important;
             }
 
             #logo-text img {
