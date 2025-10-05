@@ -490,3 +490,41 @@ h6,
         margin-bottom: -75px;
     }
 }
+
+/* Enhanced Mobile Navbar Fixes */
+@media (max-width: 409px) {
+    .navbar {
+        min-height: auto !important;
+    }
+    
+    .navbar-brand {
+        max-width: calc(100% - 60px) !important;
+        overflow: hidden !important;
+    }
+    
+    .navbar-brand h1 {
+        white-space: nowrap !important;
+        overflow: hidden !important;
+        text-overflow: ellipsis !important;
+    }
+    
+    .navbar-toggler {
+        flex-shrink: 0 !important;
+        width: auto !important;
+        min-width: 45px !important;
+    }
+    
+    .container-fluid.position-relative {
+        overflow-x: hidden !important;
+    }
+}
+
+@media (max-width: 320px) {
+    .navbar-brand {
+        max-width: calc(100% - 50px) !important;
+    }
+    
+    .navbar-toggler {
+        min-width: 40px !important;
+    }
+}
