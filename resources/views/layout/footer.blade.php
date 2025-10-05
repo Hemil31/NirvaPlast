@@ -5,9 +5,11 @@
                 <div
                     class="d-flex flex-column align-items-center justify-content-center text-center h-100 bg-primary p-4">
                     <a href="{{ route('home-page') }}" class="navbar-brand p-0">
-                        <h1 class="m-0">
-                            <img src="{{ asset('images/logo.png') }}" alt="Logo" width="52" height="69">
-                            <span style="color:#ffffff; font-size: 24px;">MAITRII ENTERPRISE</span>
+                        <h1 class="m-0 d-flex flex-column align-items-center">
+                            <img src="{{ asset('images/logo.png') }}" alt="Logo" width="80" height="100"
+                                class="mb-2">
+                            <span style="color:#ffffff; font-size: 20px; white-space: nowrap; line-height: 1.2;">MAITRII
+                                ENTERPRISE</span>
                         </h1>
                     </a>
                     <p class="mt-3 mb-4">Maitrii Enterprise specializes in delivering high-quality chemicals globally,
@@ -75,8 +77,10 @@
                                     class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
                             <a class="text-light mb-2" href="{{ route('service-page') }}"><i
                                     class="bi bi-arrow-right text-primary me-2"></i>Our Services</a>
-                            <a class="text-light" href="{{ route('contact-page') }}"><i
+                            <a class="text-light mb-2" href="{{ route('contact-page') }}"><i
                                     class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
+                            <a class="text-light" href="{{ route('terms-condition-page') }}"><i
+                                    class="bi bi-arrow-right text-primary me-2"></i>Terms & Conditions</a>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
@@ -108,7 +112,8 @@
         <div class="row justify-content-end">
             <div class="col-lg-8 col-md-6">
                 <div class="d-flex align-items-center justify-content-center" style="height: 75px;">
-                    <p class="mb-0">&copy; <a class="text-white border-bottom" href="#">MAITRII ENTERPRISE</a>. All
+                    <p class="mb-0">&copy; <a class="text-white border-bottom" href="#">MAITRII
+                            ENTERPRISE</a>. All
                         Rights Reserved.
 
                         <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
