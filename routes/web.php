@@ -18,10 +18,6 @@ Route::get('/service', function () {
     return view('service');
 })->name('service-page');
 
-Route::get('/project', function () {
-    return view('project');
-})->name('project-page');
-
 Route::get('/product', function () {
     return view('product');
 })->name('product-page');
@@ -30,7 +26,7 @@ Route::get('/contact', function () {
     return view('contact');
 })->name('contact-page');
 
-Route::get('/product/', function () {
+Route::get('/product', function () {
     $products = Product::where('status', '1')->get();
     return view('product', compact('products'));
 })->name('product-page');
@@ -86,35 +82,35 @@ Route::fallback(function () {
     return view('404');
 })->name('not-found-page');
 
-Route::get('/php-info', function () {
-    ini_set('upload_max_filesize', '20M');
-    ini_set('post_max_size', '25M');
-    phpinfo();
-});
+// Route::get('/php-info', function () {
+//     ini_set('upload_max_filesize', '20M');
+//     ini_set('post_max_size', '25M');
+//     phpinfo();
+// });
 
-Route::get('/download-logos', function () {
-    $logos = [
-        'https://chemical.market/public/images/AboutUsPage/keySuppliers/logo1.png',
-        'https://chemical.market/public/images/AboutUsPage/keySuppliers/logo2.png',
-        'https://chemical.market/public/images/AboutUsPage/keySuppliers/logo3.png',
-        'https://chemical.market/public/images/AboutUsPage/keySuppliers/logo4.png',
-        'https://chemical.market/public/images/AboutUsPage/keySuppliers/logo5.png',
-        'https://chemical.market/public/images/AboutUsPage/keySuppliers/logo6.png',
-    ];
+// Route::get('/download-logos', function () {
+//     $logos = [
+//         'https://chemical.market/public/images/AboutUsPage/keySuppliers/logo1.png',
+//         'https://chemical.market/public/images/AboutUsPage/keySuppliers/logo2.png',
+//         'https://chemical.market/public/images/AboutUsPage/keySuppliers/logo3.png',
+//         'https://chemical.market/public/images/AboutUsPage/keySuppliers/logo4.png',
+//         'https://chemical.market/public/images/AboutUsPage/keySuppliers/logo5.png',
+//         'https://chemical.market/public/images/AboutUsPage/keySuppliers/logo6.png',
+//     ];
 
-    $zipFileName = 'key-suppliers-logos.zip';
-    $zip = new ZipArchive;
+//     $zipFileName = 'key-suppliers-logos.zip';
+//     $zip = new ZipArchive;
 
-    $tmpFile = tempnam(sys_get_temp_dir(), $zipFileName);
+//     $tmpFile = tempnam(sys_get_temp_dir(), $zipFileName);
 
-    if ($zip->open($tmpFile, ZipArchive::CREATE) === TRUE) {
-        foreach ($logos as $index => $logoUrl) {
-            $logoContent = file_get_contents($logoUrl);
-            $extension = pathinfo($logoUrl, PATHINFO_EXTENSION);
-            $zip->addFromString("logo" . ($index + 1) . "." . $extension, $logoContent);
-        }
-        $zip->close();
-    }
+//     if ($zip->open($tmpFile, ZipArchive::CREATE) === TRUE) {
+//         foreach ($logos as $index => $logoUrl) {
+//             $logoContent = file_get_contents($logoUrl);
+//             $extension = pathinfo($logoUrl, PATHINFO_EXTENSION);
+//             $zip->addFromString("logo" . ($index + 1) . "." . $extension, $logoContent);
+//         }
+//         $zip->close();
+//     }
 
-    return response()->download($tmpFile, $zipFileName)->deleteFileAfterSend(true);
-});
+//     return response()->download($tmpFile, $zipFileName)->deleteFileAfterSend(true);
+// });
