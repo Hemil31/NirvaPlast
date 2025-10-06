@@ -63,7 +63,8 @@
                                                     onclick="window.location='{{ route('admin.product-edit-page', $product->id) }}'"
                                                     class="btn btn-warning btn-sm">Edit</button>
                                                 <form action="{{ route('admin.product.delete', $product->id) }}"
-                                                    method="POST" style="display:inline;">
+                                                    method="POST" style="display:inline;"
+                                                    onsubmit="return confirm('Are you sure you want to delete this product?');">
                                                     @csrf
                                                     @method('DELETE')
                                                     <button type="submit" class="btn btn-danger btn-sm">Delete</button>

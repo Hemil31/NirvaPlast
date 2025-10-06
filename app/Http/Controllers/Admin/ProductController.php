@@ -107,6 +107,6 @@ class ProductController extends Controller
         // Delete the Product post
         $Product->delete();
 
-        return redirect()->route('admin-Product-page')->with('success', 'Product post deleted successfully.');
+        return redirect()->route('admin-product-page')->with('success', 'Product post deleted successfully.');
     }
 }

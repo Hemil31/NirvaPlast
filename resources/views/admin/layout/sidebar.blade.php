@@ -28,21 +28,21 @@
             <ul class="nav nav-secondary">
                 <li class="nav-item">
                     <a href="{{ route('admin-dashboard-page') }}">
-                        <i class="fas fa-home"></i>
+                        <i class="fa fa-home"></i>
                         <p>Dashboard</p>
                         {{-- <span class="badge badge-success">4</span> --}}
                     </a>
                 </li>
                 <li class="nav-item">
                     <a href="{{ route('admin-product-page') }}">
-                        <i class="fas fa-file"></i>
+                        <i class="fa fa-file"></i>
                         <p>Product</p>
-                            
+
                     </a>
                 </li>
                 <li class="nav-item">
                     <a href="{{ route('admin-inquire-page') }}">
-                        <i class="fas fa-question-circle"></i>
+                        <i class="fa fa-question-circle"></i>
                         <p>Inquiries</p>
                         {{-- <span class="badge badge-secondary">1</span> --}}
                     </a>
