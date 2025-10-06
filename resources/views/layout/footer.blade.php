@@ -11,6 +11,10 @@
                             <span style="color:#ffffff; font-size: 20px; white-space: nowrap; line-height: 1.2;">MAITRII
                                 ENTERPRISE</span>
                         </h1>
+                        <p align="center"
+                            style="margin: 0; font-size: 18px; color: #535252;font-family: 'Brush Script MT', cursive;">
+                            Your Trusted Partner in <br> Chemical Excellence</p>
+
                     </a>
                     <p class="mt-3 mb-4">Maitrii Enterprise specializes in delivering high-quality chemicals globally,
                         ensuring safety, reliability, and efficient supply solutions for every industry.</p>

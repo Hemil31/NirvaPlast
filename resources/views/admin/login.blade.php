@@ -17,7 +17,7 @@
     <div class="tile">
         <div class="tile-header">
             <h2
-                style="color: white; opacity: .75; font-size: 4rem; display: flex; justify-content: center; align-items: center; height: 100%;">
+                style="color: #4f5da7; opacity: .75; font-size: 4rem; display: flex; justify-content: center; align-items: center; height: 100%;">
                 Admin</h2>
         </div>
         <div class="tile-body">

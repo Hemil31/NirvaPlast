@@ -1,13 +1,17 @@
-
 <div class="container-fluid position-relative p-0">
     <nav class="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0">
         <a href="{{ route('home-page') }}" class="navbar-brand p-0 d-flex align-items-center" id="logo-link">
-            <h1 class="m-0 d-flex align-items-center" id="logo-text">
-                <img src="{{ asset('images/logo.png') }}" alt="Logo" class="img-fluid" width="52" height="69">
-                <span style="color:#183e68; margin-left: 8px;">MAITRII E</span><span style="color:#3db0ac;">NTERPRISE</span>
-            </h1>
+            <img src="{{ asset('images/logo.png') }}" alt="Logo" class="img-fluid" width="52" height="69">
+            <div class="d-flex flex-column justify-content-center ms-2">
+                <h1 class="m-0" id="logo-text" style="line-height: 1;">
+                    <span style="color:#183e68;">MAITRII E</span>
+                    <span style="color:#3db0ac;">NTERPRISE</span>
+                </h1>
+                <p align="center" style="margin: 0; font-size: 18px; color: #535252;font-family: 'Brush Script MT', cursive;">Your Trusted Partner in Chemical Excellence</p>
+            </div>
         </a>
-        <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="fa fa-bars"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
