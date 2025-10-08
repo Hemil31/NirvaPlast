@@ -4,8 +4,7 @@
             <img src="{{ asset('images/logo.png') }}" alt="Logo" class="img-fluid" width="52" height="69">
             <div class="d-flex flex-column justify-content-center ms-2">
                 <h1 class="m-0" id="logo-text" style="line-height: 1;">
-                    <span style="color:#183e68;">MAITRII E</span>
-                    <span style="color:#3db0ac;">NTERPRISE</span>
+                        <span style="color:#183e68;">MAITRII</span> <span style="color:#3db0ac;">ENTERPRISE</span>
                 </h1>
                 <p align="center" style="margin: 0; font-size: 14px; color: #535252;font-family: 'Brush Script MT', cursive;">Your Trusted Partner in Chemical Excellence</p>
             </div>
