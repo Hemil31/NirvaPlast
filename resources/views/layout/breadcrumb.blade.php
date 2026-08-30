@@ -4,7 +4,7 @@
         <h1 class="display-2 text-white mb-3 animated slideInDown">@yield('breadcrumbActive')</h1>
         <nav aria-label="breadcrumb animated slideInDown">
             <ol class="breadcrumb justify-content-center mb-0">
-                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item"><a href="{{ route('home-page') }}">Home</a></li>
                 <li class="breadcrumb-item" aria-current="page">@yield('breadcrumbActive')</li>
             </ol>
         </nav>

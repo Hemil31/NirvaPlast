@@ -1,88 +1,89 @@
- <div class="container-fluid container-service py-5">
+<div class="container-fluid container-service py-5">
         <div class="container py-5">
-            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                <h1 class="display-6 mb-3">Reliable & High-Quality Laboratory Service</h1>
-                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus augue, iaculis id elit eget, ultrices pulvinar tortor.</p>
+            <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
+                <h5 class="fw-bold text-primary text-uppercase mb-2">Capabilities</h5>
+                <h1 class="mb-0">What We Offer</h1>
+                <p class="text-muted mb-0 mt-3">End-to-End Plastic Engineering & Manufacturing Solutions</p>
             </div>
             <div class="row g-4">
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="service-item">
                         <div class="icon-box-primary mb-4">
-                            <i class="bi bi-heart-pulse text-dark"></i>
+                            <i class="bi bi-lightning-charge text-dark"></i>
                         </div>
-                        <h5 class="mb-3">Pathology Testing</h4>
-                            <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus augue.</p>
-                        <a class="btn btn-light px-3" href="">Read More<i class="bi bi-chevron-double-right ms-1"></i></a>
+                        <h5 class="mb-3">Precision Moulding</h5>
+                        <p class="mb-4">High-quality plastic components manufactured with precision and consistency.</p>
+                        <a class="btn btn-light px-3" href="{{ route('service-page') }}">Read More<i class="bi bi-chevron-double-right ms-1"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="service-item">
                         <div class="icon-box-primary mb-4">
-                            <i class="bi bi-lungs text-dark"></i>
+                            <i class="bi bi-gear-wide-connected text-dark"></i>
                         </div>
-                        <h5 class="mb-3">Microbiology Tests</h4>
-                            <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus augue.</p>
-                        <a class="btn btn-light px-3" href="">Read More<i class="bi bi-chevron-double-right ms-1"></i></a>
+                        <h5 class="mb-3">Mould Development</h5>
+                        <p class="mb-4">Custom moulds designed for performance, durability and production requirements.</p>
+                        <a class="btn btn-light px-3" href="{{ route('service-page') }}">Read More<i class="bi bi-chevron-double-right ms-1"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="service-item">
                         <div class="icon-box-primary mb-4">
-                            <i class="bi bi-virus text-dark"></i>
+                            <i class="bi bi-gear text-dark"></i>
                         </div>
-                        <h5 class="mb-3">Biochemistry Tests</h4>
-                            <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus augue.</p>
-                        <a class="btn btn-light px-3" href="">Read More<i class="bi bi-chevron-double-right ms-1"></i></a>
+                        <h5 class="mb-3">CNC Machining</h5>
+                        <p class="mb-4">High-precision machining for complex components.</p>
+                        <a class="btn btn-light px-3" href="{{ route('service-page') }}">Read More<i class="bi bi-chevron-double-right ms-1"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
                     <div class="service-item">
                         <div class="icon-box-primary mb-4">
-                            <i class="bi bi-capsule-pill text-dark"></i>
+                            <i class="bi bi-cpu text-dark"></i>
                         </div>
-                        <h5 class="mb-3">Histopatology Tests</h4>
-                            <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus augue.</p>
-                        <a class="btn btn-light px-3" href="">Read More<i class="bi bi-chevron-double-right ms-1"></i></a>
+                        <h5 class="mb-3">Plastic Engineering Solutions</h5>
+                        <p class="mb-4">Smart engineering for durable & efficient products.</p>
+                        <a class="btn btn-light px-3" href="{{ route('service-page') }}">Read More<i class="bi bi-chevron-double-right ms-1"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="service-item">
                         <div class="icon-box-primary mb-4">
-                            <i class="bi bi-capsule text-dark"></i>
+                            <i class="bi bi-layers text-dark"></i>
                         </div>
-                        <h5 class="mb-3">Urine Tests</h4>
-                            <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus augue.</p>
-                        <a class="btn btn-light px-3" href="">Read More<i class="bi bi-chevron-double-right ms-1"></i></a>
+                        <h5 class="mb-3">Custom Component Production</h5>
+                        <p class="mb-4">Tailored plastic components as per customer requirements.</p>
+                        <a class="btn btn-light px-3" href="{{ route('service-page') }}">Read More<i class="bi bi-chevron-double-right ms-1"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="service-item">
                         <div class="icon-box-primary mb-4">
-                            <i class="bi bi-prescription2 text-dark"></i>
+                            <i class="bi bi-speedometer2 text-dark"></i>
                         </div>
-                        <h5 class="mb-3">Blood Tests</h4>
-                            <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus augue.</p>
-                        <a class="btn btn-light px-3" href="">Read More<i class="bi bi-chevron-double-right ms-1"></i></a>
+                        <h5 class="mb-3">High-Volume Production</h5>
+                        <p class="mb-4">Scalable, cost-efficient injection moulding for recurring bulk supply.</p>
+                        <a class="btn btn-light px-3" href="{{ route('service-page') }}">Read More<i class="bi bi-chevron-double-right ms-1"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="service-item">
                         <div class="icon-box-primary mb-4">
-                            <i class="bi bi-clipboard2-pulse text-dark"></i>
+                            <i class="bi bi-robot text-dark"></i>
                         </div>
-                        <h5 class="mb-3">Fever Tests</h4>
-                            <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus augue.</p>
-                        <a class="btn btn-light px-3" href="">Read More<i class="bi bi-chevron-double-right ms-1"></i></a>
+                        <h5 class="mb-3">Automated / Semi-Automated Assembly</h5>
+                        <p class="mb-4">Improved speed, consistency and unit economics in assembly.</p>
+                        <a class="btn btn-light px-3" href="{{ route('service-page') }}">Read More<i class="bi bi-chevron-double-right ms-1"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
                     <div class="service-item">
                         <div class="icon-box-primary mb-4">
-                            <i class="bi bi-file-medical text-dark"></i>
+                            <i class="bi bi-shield-plus text-dark"></i>
                         </div>
-                        <h5 class="mb-3">Allergy Tests</h4>
-                            <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus augue.</p>
-                        <a class="btn btn-light px-3" href="">Read More<i class="bi bi-chevron-double-right ms-1"></i></a>
+                        <h5 class="mb-3">Medical-Grade Materials</h5>
+                        <p class="mb-4">Patient-safe material options for safe, comfortable respiratory products.</p>
+                        <a class="btn btn-light px-3" href="{{ route('service-page') }}">Read More<i class="bi bi-chevron-double-right ms-1"></i></a>
                     </div>
                 </div>
             </div>

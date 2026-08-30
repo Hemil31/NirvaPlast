@@ -1,5 +1,7 @@
 @extends('layout.main')
-@section('title', 'Contact Us')
+@section('seo_title', 'Contact Us | Request a Quote | NIRVA Technoplast')
+@section('seo_description', 'Contact NIRVA Technoplast Private Limited for bulk nebulizer mask supply, OEM / private-label manufacturing and precision plastic engineering. Call +91 99132 92004 or email info@nirvatechnoplast.in.')
+@section('seo_keywords', 'contact NIRVA Technoplast, nebulizer mask supplier India, OEM manufacturer Surat, request a quote, medical plastic manufacturer')
 @section('breadcrumbTitle', 'Contact Us')
 @section('breadcrumbActive', 'Contact')
 @section('content')
@@ -8,7 +10,9 @@
         <div class="container py-5">
             <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
                 <h5 class="fw-bold text-primary text-uppercase">Contact Us</h5>
-                <h1 class="mb-0">If You Have Any Query, Feel Free To Contact Us</h1>
+                <h1 class="mb-0">Let's Build Quality. Build Trust.</h1>
+                <p class="text-muted mt-3 mb-0">Precision Engineering. Reliable Solutions. Discuss your requirement
+                    with our team today.</p>
             </div>
             <div class="row g-5 mb-5">
                 <div class="col-lg-4 col-md-6">
@@ -20,7 +24,9 @@
                         <div class="ps-3">
                             <h5 class="mb-1">Call to ask any question</h5>
                             <h4 class="text-primary mb-0" style="font-size: 18px;">{{ config('constants.phone') }}</h4>
-                            <h4 class="text-primary mb-0" style="font-size: 18px;">{{ config('constants.phone2') }}</h4>
+                            @if(config('constants.phone') !== config('constants.phone2'))
+                                <h4 class="text-primary mb-0" style="font-size: 18px;">{{ config('constants.phone2') }}</h4>
+                            @endif
                         </div>
                     </div>
                 </div>
@@ -34,7 +40,9 @@
                         <div class="ps-3">
                             <h5 class="mb-1">Email to get free quote</h5>
                             <h4 class="text-primary mb-0" style="font-size: 18px;">{{ config('constants.email') }}</h4>
-                            <h4 class="text-primary mb-0" style="font-size: 18px;">{{ config('constants.email2') }}</h4>
+                            @if(config('constants.email') !== config('constants.email2'))
+                                <h4 class="text-primary mb-0" style="font-size: 18px;">{{ config('constants.email2') }}</h4>
+                            @endif
                         </div>
                     </div>
                 </div>
@@ -57,6 +65,7 @@
 
             <div class="row g-5">
                 <div class="col-lg-6 wow slideInUp" data-wow-delay="0.3s">
+                    <div id="contactAlert"></div>
                     <form id="contactForm">
                         @csrf
                         <div class="row g-3">
@@ -80,8 +89,8 @@
                                 </select>
                             </div>
                             <div class="col-9">
-                                <input type="" class="form-control border-0 bg-light px-4" name="mobile"
-                                    placeholder="Mobile No." maxlength="10" style="height: 55px;" required>
+                                <input type="tel" class="form-control border-0 bg-light px-4" name="mobile"
+                                    placeholder="Mobile No." maxlength="15" style="height: 55px;" required>
                             </div>
                             <div class="col-12">
                                 <textarea class="form-control border-0 bg-light px-4 py-3" rows="4" name="message" placeholder="Message" required></textarea>
@@ -94,7 +103,7 @@
                 </div>
                 <div class="col-lg-6 wow slideInUp" data-wow-delay="0.6s">
                     <iframe class="position-relative rounded w-100 h-100"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59353.35139864182!2d72.97839400707737!3d21.602137438672045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be023ee0952c0db%3A0xf1283c1db0aa4b04!2sGolden%20Square!5e0!3m2!1sen!2sin!4v1750231955091!5m2!1sen!2sin"
+                        src="https://www.google.com/maps?q=Navagam,%20Kamrej,%20Surat,%20Gujarat%20394180,%20India&output=embed"
                         frameborder="0" style="min-height: 350px; border:0;" allowfullscreen="" aria-hidden="false"
                         tabindex="0"></iframe>
                 </div>
@@ -114,18 +123,18 @@
                     url: '{{ route('admin.inquire.store') }}',
                     data: $(this).serialize(),
                     success: function(response) {
-                        $('#formAlert').html(
+                        $('#contactAlert').html(
                             '<div class="alert alert-success mt-3">Your inquiry has been submitted successfully!</div>'
                         );
                         $('#contactForm')[0].reset();
 
                         // Hide message after 3 seconds
                         setTimeout(function() {
-                            $('#formAlert').fadeOut();
+                            $('#contactAlert').fadeOut();
                         }, 3000);
                     },
                     error: function(xhr) {
-                        $('#formAlert').html(
+                        $('#contactAlert').html(
                             '<div class="alert alert-danger mt-3">There was an error submitting your inquiry. Please try again later.</div>'
                         );
                     }

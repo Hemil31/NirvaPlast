@@ -29,7 +29,14 @@
     @endif
 
     @yield('content')
-    
+
+    <!-- OEM / Quote Start -->
+
+    @if (!request()->routeIs('contact-page'))
+        @include('components.quotes')
+    @endif
+
+    <!-- OEM / Quote End -->
 
     <!-- Footer Start -->
     @include('layout.footer')

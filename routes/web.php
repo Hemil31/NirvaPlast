@@ -19,17 +19,29 @@ Route::get('/service', function () {
 })->name('service-page');
 
 Route::get('/product', function () {
-    return view('product');
+    $products = Product::where('status', '1')->get();
+    return view('product', compact('products'));
 })->name('product-page');
+
+Route::get('/market', function () {
+    return view('market');
+})->name('market-page');
+
+Route::get('/oem', function () {
+    return view('oem');
+})->name('oem-page');
+
+Route::get('/quality', function () {
+    return view('quality');
+})->name('quality-page');
+
+Route::get('/quality-assurance', function () {
+    return redirect()->route('quality-page');
+})->name('quality-assurance-page');
 
 Route::get('/contact', function () {
     return view('contact');
 })->name('contact-page');
-
-Route::get('/product', function () {
-    $products = Product::where('status', '1')->get();
-    return view('product', compact('products'));
-})->name('product-page');
 
 Route::get('/terms-condition', function () {
     return view('terms-condition');
