@@ -1,59 +1,31 @@
-<div class="container-fluid position-relative p-0">
-    <nav class="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0">
-        <a href="{{ route('home-page') }}" class="navbar-brand p-0 d-flex align-items-center" id="logo-link">
-            <img src="{{ asset('images/logo.png') }}" alt="Logo" class="img-fluid" width="52" height="69">
-            <div class="d-flex flex-column justify-content-center ms-2">
-                <h1 class="m-0" id="logo-text" style="line-height: 1;">
-                        <span style="color:#183e68;">MAITRII</span> <span style="color:#3db0ac;">ENTERPRISE</span>
-                </h1>
-                <p align="center" style="margin: 0; font-size: 14px; color: #535252;font-family: 'Brush Script MT', cursive;">Your Trusted Partner in Chemical Excellence</p>
-            </div>
-        </a>
-        <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
-            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="fa fa-bars"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav ms-auto py-0">
-                <a href="{{ route('home-page') }}"
-                    class="nav-item nav-link {{ request()->is('/') ? 'active' : '' }}">Home</a>
-                <a href="{{ route('product-page') }}"
-                    class="nav-item nav-link {{ request()->is('product') ? 'active' : '' }}">Products</a>
-                <a href="{{ route('service-page') }}"
-                    class="nav-item nav-link {{ request()->is('service') ? 'active' : '' }}">Services</a>
-                <a href="{{ route('about-page') }}"
-                    class="nav-item nav-link {{ request()->is('about') ? 'active' : '' }}">About</a>
-                {{-- <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Blog</a>
-                    <div class="dropdown-menu m-0">
-                        <a href="blog.html" class="dropdown-item">Blog Grid</a>
-                        <a href="detail.html" class="dropdown-item">Blog Detail</a>
+<div class="container-fluid sticky-top">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white py-lg-0 px-lg-3">
+                <a href="index.html" class="navbar-brand d-lg-none">
+                    <h1 class="text-primary m-0">Lab<span class="text-dark">sky</span></h1>
+                </a>
+                <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse"
+                    data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav">
+                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <a href="service.html" class="nav-item nav-link">Market</a>
+                        <a href="service.html" class="nav-item nav-link">Products</a>
+                        <a href="service.html" class="nav-item nav-link">Capabilities</a>
+                        <a href="service.html" class="nav-item nav-link">OEM</a>
+                        <a href="service.html" class="nav-item nav-link">Quality</a>
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    </div>
+                    <div class="ms-auto d-none d-lg-flex">
+                        <a class="btn btn-sm-square btn-primary ms-2" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-sm-square btn-primary ms-2" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-sm-square btn-primary ms-2" href=""><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-sm-square btn-primary ms-2" href=""><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
-                <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-                    <div class="dropdown-menu m-0">
-                        <a href="price.html" class="dropdown-item">Pricing Plan</a>
-                        <a href="feature.html" class="dropdown-item">Our features</a>
-                        <a href="team.html" class="dropdown-item">Team Members</a>
-                        <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                        <a href="quote.html" class="dropdown-item">Free Quote</a>
-                    </div>
-                </div> --}}
-                <a href="{{ route('contact-page') }}"
-                    class="nav-item nav-link {{ request()->is('contact') ? 'active' : '' }}">Contact</a>
-            </div>
-            {{-- <butaton type="button" class="btn text-primary ms-3" data-bs-toggle="modal" data-bs-target="#searchModal">
-                <i class="fa fa-search"></i></butaton>
-            <a href="https://htmlcodex.com/startup-company-website-template"
-                class="btn btn-primary py-2 px-4 ms-3">Download Pro Version</a> --}}
-
-            <a href="tel:{{ config('constants.phone') }}" class="btn btn-primary py-2 px-4 ms-3">
-                <i class="fas fa-phone-alt"></i>
-                Call Anytime
-            </a>
+            </nav>
         </div>
-    </nav>
-
-
-</div>
+    </div>

@@ -1,10 +1,13 @@
-<div class="container-fluid bg-primary py-5 bg-header" style="margin-bottom: 90px;">
-    <div class="row py-5">
-        <div class="col-12 pt-lg-5 mt-lg-5 text-center">
-            <h1 class="display-4 text-white animated zoomIn">@yield('breadcrumbActive')</h1>
-            <a href="" class="h5 text-white">Home</a>
-            <i class="far fa-circle text-white px-2"></i>
-            <a href="" class="h5 text-white">@yield('breadcrumbActive')</a>
-        </div>
+<!-- Page Header Start -->
+<div class="container-fluid page-header py-5 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container text-center py-5 mt-4">
+        <h1 class="display-2 text-white mb-3 animated slideInDown">@yield('breadcrumbActive')</h1>
+        <nav aria-label="breadcrumb animated slideInDown">
+            <ol class="breadcrumb justify-content-center mb-0">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item" aria-current="page">@yield('breadcrumbActive')</li>
+            </ol>
+        </nav>
     </div>
 </div>
+<!-- Page Header End -->

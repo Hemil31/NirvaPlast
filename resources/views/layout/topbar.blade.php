@@ -1,32 +1,16 @@
-<div class="container-fluid bg-dark px-5 d-none d-lg-block">
-    <div class="row gx-0">
-        <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
-            <div class="d-inline-flex align-items-center" style="height: 45px;">
-                <small class="me-3 text-light"><i
-                        class="fa fa-map-marker-alt me-2"></i>{{ config('constants.address') }}</small>
-                <small class="me-3 text-light"><i class="fa fa-phone-alt me-2"></i>{{ config('constants.phone') }}</small>
-                <small class="text-light"><i class="fa fa-envelope-open me-2"></i>{{ config('constants.email') }}</small>
+<div class="container-fluid py-2 d-none d-lg-flex">
+    <div class="container">
+        <div class="d-flex justify-content-between">
+            <div>
+                <small class="me-3"><i class="fa fa-map-marker-alt me-2"></i>{{ config('constants.address') }}</small>
+                <small class="me-3"><i class="fa fa-clock me-2"></i>Mon-Sat 09am-5pm, Sun Closed</small>
             </div>
-        </div>
-        <div class="col-lg-4 text-center text-lg-end">
-            <div class="d-inline-flex align-items-center" style="height: 45px;">
-                <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2"
-                    href="{{ config('constants.social_links.twitter') }}"><i class="fab fa-twitter fw-normal"></i></a>
-                <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2"
-                    href="{{ config('constants.social_links.facebook') }}"><i
-                        class="fab fa-facebook-f fw-normal"></i></a>
-                <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2"
-                    href="{{ config('constants.social_links.linkedin') }}"><i
-                        class="fab fa-linkedin-in fw-normal"></i></a>
-                <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2"
-                    href="{{ config('constants.social_links.instagram') }}"><i
-                        class="fab fa-instagram fw-normal"></i></a>
-                <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2"
-                    href="https://wa.me/{{ str_replace(' ', '', config('constants.phone')) }}"><i
-                        class="fab fa-whatsapp text-white"></i></a>
-                <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2"
-                    href="{{ config('constants.social_links.youtube') }}"><i class="fab fa-youtube fw-normal"></i></a>
-            </div>
+            <nav class="breadcrumb mb-0">
+                <a class="breadcrumb-item small text-body" href="#">Career</a>
+                <a class="breadcrumb-item small text-body" href="#">Support</a>
+                <a class="breadcrumb-item small text-body" href="#">Terms</a>
+                <a class="breadcrumb-item small text-body" href="#">FAQs</a>
+            </nav>
         </div>
     </div>
 </div>

@@ -2,34 +2,34 @@
 @section('content')
     <!-- Carousel Start -->
 
-    <div class="container-fluid p-0 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container-fluid header-carousel px-0 mb-5">
         <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="w-100" src="{{ asset('front/img/carousel-1.jpeg') }}" alt="Image">
-                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                        <div class="p-3" style="max-width: 900px;">
-                            <h5 class="text-white text-uppercase mb-3 animated slideInDown">Reliable & Professional</h5>
-                            <h1 class="display-1 text-white mb-md-4 animated zoomIn">Excellence in Chemical Trading Worldwide
-                            </h1>
-                            <a href="{{ route('contact-page') }}" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Free
-                                Quote</a>
-                            <a href="{{ route('contact-page') }}" class="btn btn-outline-light py-md-3 px-md-5 animated slideInRight">Contact
-                                Us</a>
+                    <img class="w-100" src="{{ asset('front/img/carousel-1.jpg') }}" alt="Image">
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <div class="row justify-content-start">
+                                <div class="col-lg-7 text-start">
+                                    <h1 class="display-1 text-white animated slideInRight mb-3">Award Winning Laboratory Center</h1>
+                                    <p class="mb-5 animated slideInRight">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus augue, iaculis id elit eget, ultrices pulvinar tortor. Quisque vel lorem porttitor, malesuada arcu quis, fringilla risus.</p>
+                                    <a href="" class="btn btn-primary py-3 px-5 animated slideInRight">Explore More</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img class="w-100" src="{{ asset('front/img/carousel-2.jpg') }}" alt="Image">
-                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                        <div class="p-3" style="max-width: 900px;">
-                            <h5 class="text-white text-uppercase mb-3 animated slideInDown">Creative & Innovative</h5>
-                            <h1 class="display-1 text-white mb-md-4 animated zoomIn">Connecting Global Markets with Quality Chemicals
-                            </h1>
-                            <a href="{{ route('contact-page') }}" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Free
-                                Quote</a>
-                            <a href="{{ route('contact-page') }}" class="btn btn-outline-light py-md-3 px-md-5 animated slideInRight">Contact
-                                Us</a>
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <div class="row justify-content-end">
+                                <div class="col-lg-7 text-end">
+                                    <h1 class="display-1 text-white animated slideInLeft mb-3">Expet Doctors & Lab Assistants</h1>
+                                    <p class="mb-5 animated slideInLeft">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus augue, iaculis id elit eget, ultrices pulvinar tortor. Quisque vel lorem porttitor, malesuada arcu quis, fringilla risus.</p>
+                                    <a href="" class="btn btn-primary py-3 px-5 animated slideInLeft">Explore More</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -47,11 +47,6 @@
 
     <!-- Carousel End -->
 
-    <!-- Facts Start -->
-
-    @include('components.facts')
-
-    <!-- Facts End -->
 
     <!-- About Start -->
 
@@ -59,11 +54,6 @@
 
     <!-- About End -->
 
-    <!-- Features Start -->
-
-    @include('components.features')
-
-    <!-- Features End -->
 
 
     <!-- Service Start -->
@@ -72,40 +62,9 @@
 
     <!-- Service End -->
 
-    <!-- Products Start -->
-
-    @include('components.products')
-
-    <!-- Products End -->
-
-    <!-- Quote Start -->
-
-    @include('components.quotes')
-
-    <!-- Quote End -->
-
-    <!-- Testimonial Start -->
-
-    @include('components.testimonial')
-
-    <!-- Testimonial End -->
-
     <!-- Team Start -->
 
     @include('components.team')
 
     <!-- Team End -->
-
-
-    <!-- Blog Start -->
-
-    @include('components.blog')
-
-    <!-- Blog End -->
-
-    <!-- Vendor Start -->
-
-    @include('components.vendor')
-
-    <!-- vendor End -->
 @endsection

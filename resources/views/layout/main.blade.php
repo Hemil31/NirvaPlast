@@ -14,6 +14,9 @@
     @include('layout.topbar')
     <!-- Topbar End -->
 
+    <!-- Navbar Start -->
+    @include('layout.brand-start')
+    <!-- Navbar End -->
 
     <!-- Navbar Start -->
     @include('layout.navbar')
@@ -26,6 +29,7 @@
     @endif
 
     @yield('content')
+    
 
     <!-- Footer Start -->
     @include('layout.footer')
