@@ -8,7 +8,7 @@
                     <span><a class="text-white text-decoration-none" href="tel:{{ config('constants.phone') }}">{{ config('constants.phone') }}</a></span>
                 </div>
             </div>
-            <a href="{{ route('home-page') }}" class="h1 text-white mb-0">{{ config('constants.brand_name') }}<span class="text-dark">{{ config('constants.brand_sub') }}</span></a>
+            <!-- <a href="{{ route('home-page') }}" class="h1 text-white mb-0">{{ config('constants.brand_name') }}<span class="text-dark">{{ config('constants.brand_sub') }}</span></a> -->
             <div class="d-flex">
                 <i class="bi bi-envelope fs-2"></i>
                 <div class="ms-3">
