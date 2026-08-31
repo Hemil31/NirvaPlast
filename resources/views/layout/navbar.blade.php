@@ -1,8 +1,9 @@
 <div class="container-fluid sticky-top">
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light bg-white py-lg-0 px-lg-3">
-                <a href="{{ route('home-page') }}" class="navbar-brand py-2 me-lg-4">
+                <a href="{{ route('home-page') }}" class="navbar-brand py-2 me-lg-4 d-flex align-items-center gap-2">
                     <img src="{{ asset('images/nirva-logo.png') }}" alt="{{ config('constants.company_name') }}" class="navbar-logo">
+                    <img src="{{ asset('images/name-logo-write.png') }}" alt="{{ config('constants.company_name') }}" class="navbar-name-logo">
                 </a>
                 <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse"
                     data-bs-target="#navbarCollapse">

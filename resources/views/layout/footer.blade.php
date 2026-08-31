@@ -3,8 +3,9 @@
         <div class="container">
             <div class="row g-5 py-5">
                 <div class="col-lg-6 pe-lg-5">
-                    <a href="{{ route('home-page') }}" class="navbar-brand d-inline-block mb-3">
+                    <a href="{{ route('home-page') }}" class="navbar-brand d-inline-flex align-items-center gap-3 mb-3">
                         <img src="{{ asset('images/nirva-logo.png') }}" alt="{{ config('constants.company_name') }}" class="footer-logo">
+                        <img src="{{ asset('images/name-logo-write.png') }}" alt="{{ config('constants.company_name') }}" class="footer-name-logo">
                     </a>
                     <p class="fs-5 mb-4">{{ config('constants.tagline') }}</p>
                     <p class="mb-4">Precision plastic engineering solutions for healthcare & industry - injection moulding, medical-grade manufacturing, nebulizer masks and OEM / private-label supply.</p>

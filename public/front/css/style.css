@@ -116,6 +116,11 @@
     width: auto;
 }
 
+.navbar .navbar-name-logo {
+    height: 40px;
+    width: auto;
+}
+
 .navbar .navbar-nav .nav-link {
     margin-right: 35px;
     padding: 20px 0;
@@ -217,7 +222,7 @@
         position: relative;
         min-height: 450px;
     }
-    
+
     #header-carousel .carousel-item img {
         position: absolute;
         width: 100%;
@@ -556,9 +561,20 @@
 
 
 /*** Footer ***/
+.footer .navbar-brand {
+    display: inline-flex;
+    align-items: center;
+}
 .footer .footer-logo {
     height: 60px;
     width: auto;
+    flex-shrink: 0;
+    filter: brightness(0) invert(1);
+}
+.footer .footer-name-logo {
+    height: 60px;
+    width: auto;
+    flex-shrink: 0;
     filter: brightness(0) invert(1);
 }
 .footer {
