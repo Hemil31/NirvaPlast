@@ -21,14 +21,14 @@
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="team-item">
                         <div class="position-relative overflow-hidden">
-                            <img class="img-fluid w-100" src="{{ asset('front/img/team-2.jpg') }}" alt="Bharatbhai Arjanbhai Dobariya">
+                            <img class="img-fluid w-100" src="{{ asset('front/img/team-1.jpg') }}" alt="Bharatbhai Arjanbhai Dobariya">
                             <div class="team-social">
                                 <a class="btn btn-square btn-light mx-1" href="{{ route('contact-page') }}"><i class="fa fa-envelope"></i></a>
                                 <a class="btn btn-square btn-light mx-1" href="tel:{{ config('constants.phone') }}"><i class="fa fa-phone"></i></a>
                                 <a class="btn btn-square btn-light mx-1" href="{{ route('contact-page') }}"><i class="fa fa-link"></i></a>
                             </div>
                         </div>
-                        <div class="text-center p-4">
+                        <div class="text-center p-3">
                             <h5 class="mb-1">Bharatbhai Arjanbhai Dobariya</h5>
                             <span class="text-primary fw-bold">Director</span>
                             <p class="mb-0 mt-3">Drives strategic growth, manufacturing development, and business
@@ -46,7 +46,7 @@
                                 <a class="btn btn-square btn-light mx-1" href="{{ route('contact-page') }}"><i class="fa fa-link"></i></a>
                             </div>
                         </div>
-                        <div class="text-center p-4">
+                        <div class="text-center p-3">
                             <h5 class="mb-1">Tarangkumar Ashvinbhai Gaudani</h5>
                             <span class="text-primary fw-bold">Director</span>
                             <p class="mb-0 mt-3">Focuses on production operations, process efficiency, and precision
@@ -64,7 +64,7 @@
                                 <a class="btn btn-square btn-light mx-1" href="{{ route('contact-page') }}"><i class="fa fa-link"></i></a>
                             </div>
                         </div>
-                        <div class="text-center p-4">
+                        <div class="text-center p-3">
                             <h5 class="mb-1">Rinkal Satyamkumar Kanani</h5>
                             <span class="text-primary fw-bold">Director</span>
                             <p class="mb-0 mt-3">Supports business administration, quality-focused operations, and

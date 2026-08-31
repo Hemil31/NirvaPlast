@@ -47,21 +47,21 @@
                         </div>
                     </div>
                 </div>
-                <div class="row g-4 g-sm-5 justify-content-center">
-                    <div class="col-sm-6">
-                        <div class="about-fact btn-square flex-column rounded-circle bg-primary ms-sm-auto">
+                <div class="row g-2 g-sm-5 justify-content-center">
+                    <div class="col-4">
+                        <div class="about-fact btn-square flex-column rounded-circle bg-primary mx-auto">
                             <p class="text-white mb-0">India Moulding Market CAGR</p>
                             <h1 class="text-white mb-0">5.5%</h1>
                         </div>
                     </div>
-                    <div class="col-sm-6 text-start">
-                        <div class="about-fact btn-square flex-column rounded-circle bg-secondary me-sm-auto">
+                    <div class="col-4 text-center">
+                        <div class="about-fact btn-square flex-column rounded-circle bg-secondary mx-auto">
                             <p class="text-white mb-0">India Nebulizer Market Share</p>
                             <h1 class="text-white mb-0">86.6%</h1>
                         </div>
                     </div>
-                    <div class="col-sm-6">
-                        <div class="about-fact mt-n130 btn-square flex-column rounded-circle bg-dark mx-sm-auto">
+                    <div class="col-4">
+                        <div class="about-fact btn-square flex-column rounded-circle bg-dark mx-auto">
                             <p class="text-white mb-0">Export Target Markets</p>
                             <h1 class="text-white mb-0">4</h1>
                         </div>

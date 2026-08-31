@@ -220,7 +220,7 @@
 @media (max-width: 767.98px) {
     #header-carousel .carousel-item {
         position: relative;
-        min-height: 450px;
+        min-height: 550px;
     }
 
     #header-carousel .carousel-item img {
@@ -249,15 +249,21 @@
 
 /*** About ***/
 .about-fact {
-    width: 220px;
-    height: 220px;
+    width: 180px;
+    height: 180px;
+    padding: 1rem;
     box-shadow: 0 0 30px rgba(0, 0, 0, .1);
 }
 
-@media (min-width: 576px) {
-    .about-fact.mt-n130 {
-        margin-top: -130px;
-    }
+.about-fact p {
+    font-size: .8rem;
+    line-height: 1.2;
+    text-align: center;
+    padding: 0 .5rem;
+}
+
+.about-fact h1 {
+    font-size: 1.5rem;
 }
 
 
@@ -504,6 +510,17 @@
 .team-item {
     background: var(--bs-white);
     box-shadow: 0 0 45px rgba(0, 0, 0, .05);
+    overflow: hidden;
+}
+
+.team-item .position-relative {
+    height: 250px;
+}
+
+.team-item .position-relative img {
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
 }
 
 .team-item .team-social {
@@ -634,8 +651,12 @@
 
 /*** Responsive Headings ***/
 @media (max-width: 767.98px) {
+    .carousel-caption {
+        padding: 1rem;
+    }
+
     .carousel-caption .display-1 {
-        font-size: 2rem;
+        font-size: 1.5rem;
         line-height: 1.2;
     }
 
@@ -696,15 +717,15 @@
     }
 
     .about-fact {
-        width: 160px;
-        height: 160px;
+        width: 110px;
+        height: 110px;
     }
 
     .about-fact h1 {
-        font-size: 1.6rem;
+        font-size: 1.2rem;
     }
 
-    .about-fact.mt-n130 {
-        margin-top: 0;
+    .about-fact p {
+        font-size: .85rem;
     }
 }
