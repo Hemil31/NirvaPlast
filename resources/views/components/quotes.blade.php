@@ -45,11 +45,11 @@
                             <div class="row g-3">
                                 <div class="col-xl-12">
                                     <input type="text" name="name" class="form-control bg-light border-0"
-                                        placeholder="Your Name" style="height: 55px;">
+                                        placeholder="Your Name" style="height: 55px;" required>
                                 </div>
                                 <div class="col-12">
                                     <input type="email" name="email" class="form-control bg-light border-0"
-                                        placeholder="Your Email" style="height: 55px;">
+                                        placeholder="Your Email" style="height: 55px;" required>
                                 </div>
                                 <div class="col-4">
                                     <select class="form-select bg-light border-0" name="country_code" style="height: 55px;">
@@ -62,11 +62,11 @@
                                 </div>
                                 <div class="col-8">
                                     <input type="tel" class="form-control bg-light border-0" name="mobile"
-                                        placeholder="Mobile No." style="height: 55px;">
+                                        placeholder="Mobile No." style="height: 55px;" required>
                                 </div>
                                 <div class="col-12">
                                     <textarea class="form-control bg-light border-0" rows="3" name="message"
-                                        placeholder="Message"></textarea>
+                                        placeholder="Message" required></textarea>
                                 </div>
                                 <div class="col-12">
                                     <button class="btn btn-dark w-100 py-3" type="submit">Send OEM Enquiry</button>
