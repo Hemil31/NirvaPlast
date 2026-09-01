@@ -4,9 +4,11 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\ProductRequest;
+use App\Models\Category;
 use App\Models\Product;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Str;
 
 class ProductController extends Controller
 {
@@ -16,7 +18,7 @@ class ProductController extends Controller
     public function index()
     {
         // Fetch all Product posts
-        $Products = Product::all();
+        $Products = Product::with('category')->get();
         return view('admin.Product.index', compact('Products'));
     }
 
@@ -25,7 +27,8 @@ class ProductController extends Controller
      */
     public function create()
     {
-        return view('admin.Product.create');
+        $categories = Category::where('status', '1')->get();
+        return view('admin.Product.create', compact('categories'));
     }
 
     /**
@@ -34,12 +37,20 @@ class ProductController extends Controller
     public function store(ProductRequest $request)
     {
         $validated = $request->validated();
+        $validated['slug'] = Str::slug($request->product_name);
 
         if ($request->hasFile('file_path')) {
             $file = $request->file('file_path');
             $filename = $request->product_name . '_' . time() . '.' . $file->getClientOriginalExtension();
             $path = $file->storeAs('uploads/Products', $filename, 'public');
             $validated['file_path'] = $path;
+        }
+
+        if ($request->hasFile('image')) {
+            $file = $request->file('image');
+            $filename = 'img_' . $request->product_name . '_' . time() . '.' . $file->getClientOriginalExtension();
+            $path = $file->storeAs('uploads/Products', $filename, 'public');
+            $validated['image'] = $path;
         }
 
         // Create the Product post
@@ -62,7 +73,8 @@ class ProductController extends Controller
     {
         // Find the Product post by ID
         $Product = Product::findOrFail($id);
-        return view('admin.Product.edit', compact('Product'));
+        $categories = Category::where('status', '1')->get();
+        return view('admin.Product.edit', compact('Product', 'categories'));
     }
 
     /**
@@ -72,13 +84,17 @@ class ProductController extends Controller
     {
         $validated = $request->validate([
             'product_name' => 'required|string|max:255',
+            'category_id' => 'nullable|exists:categories,id',
             'file_path' => 'nullable|max:2048',
+            'image' => 'nullable|image|max:2048',
+            'content' => 'nullable|string',
             'status' => 'required|integer|in:0,1',
         ]);
 
         // Find the Product post by ID
-        // dd($request->all());
         $Product = Product::findOrFail($id);
+
+        $validated['slug'] = Str::slug($request->product_name);
 
         if ($request->hasFile('file_path')) {
             // Delete old file if exists
@@ -89,6 +105,17 @@ class ProductController extends Controller
             $filename = $request->product_name . '_' . time() . '.' . $file->getClientOriginalExtension();
             $path = $file->storeAs('uploads/Products', $filename, 'public');
             $validated['file_path'] = $path;
+        }
+
+        if ($request->hasFile('image')) {
+            // Delete old image if exists
+            if ($Product->image) {
+                Storage::disk('public')->delete($Product->image);
+            }
+            $file = $request->file('image');
+            $filename = 'img_' . $request->product_name . '_' . time() . '.' . $file->getClientOriginalExtension();
+            $path = $file->storeAs('uploads/Products', $filename, 'public');
+            $validated['image'] = $path;
         }
 
         // Update the Product post

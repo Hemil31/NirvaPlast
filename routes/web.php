@@ -3,6 +3,8 @@
 use App\Http\Controllers\Admin\ProductController;
 use App\Http\Controllers\Admin\InquireController;
 use App\Http\Controllers\Admin\LoginController;
+use App\Http\Controllers\Admin\CategoryController;
+use App\Http\Controllers\Admin\TeamMemberController;
 use App\Models\Product;
 use Illuminate\Support\Facades\Route;
 
@@ -19,8 +21,11 @@ Route::get('/service', function () {
 })->name('service-page');
 
 Route::get('/product', function () {
+    $categories = \App\Models\Category::where('status', '1')->with(['products' => function ($query) {
+        $query->where('status', '1');
+    }])->get();
     $products = Product::where('status', '1')->get();
-    return view('product', compact('products'));
+    return view('product', compact('categories', 'products'));
 })->name('product-page');
 
 Route::get('/market', function () {
@@ -62,7 +67,7 @@ Route::prefix('admin')->group(function () {
             return view('admin.index');
         })->name('admin-dashboard-page');
 
-        Route::prefix(prefix: 'product')->group(function () {
+        Route::prefix('product')->group(function () {
             Route::resource('/', ProductController::class)->parameters(['' => 'product'])->names([
                 'index' => 'admin-product-page',
                 'create' => 'admin-product-create-page',
@@ -74,6 +79,18 @@ Route::prefix('admin')->group(function () {
             ]);
         });
 
+        Route::prefix('category')->group(function () {
+            Route::resource('/', CategoryController::class)->parameters(['' => 'category'])->names([
+                'index' => 'admin-category-page',
+                'create' => 'admin-category-create-page',
+                'store' => 'admin.category.store',
+                'edit' => 'admin.category-edit-page',
+                'update' => 'admin.category.update',
+                'destroy' => 'admin.category.delete',
+                'show' => 'admin.category.show',
+            ]);
+        });
+
         Route::prefix('inquire')->group(function () {
             Route::resource('/', InquireController::class)->parameters(['' => 'inquire'])->names([
                 'index' => 'admin-inquire-page',
@@ -82,6 +99,18 @@ Route::prefix('admin')->group(function () {
                 'update' => 'admin.inquire.update',
                 'destroy' => 'admin.inquire.delete',
                 'show' => 'admin.inquire.show',
+            ]);
+        });
+
+        Route::prefix('team')->group(function () {
+            Route::resource('/', TeamMemberController::class)->parameters(['' => 'team'])->names([
+                'index' => 'admin-team-page',
+                'create' => 'admin-team-create-page',
+                'store' => 'admin.team.store',
+                'edit' => 'admin.team-edit-page',
+                'update' => 'admin.team.update',
+                'destroy' => 'admin.team.delete',
+                'show' => 'admin.team.show',
             ]);
         });
 

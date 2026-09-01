@@ -23,7 +23,10 @@ class ProductRequest extends FormRequest
     {
         return [
             'product_name' => 'required|string|max:255',
+            'category_id' => 'nullable|exists:categories,id',
             'file_path' => 'required|max:2048',
+            'image' => 'nullable|image|max:2048',
+            'content' => 'nullable|string',
             'status' => 'required|integer|in:0,1',
         ];
     }

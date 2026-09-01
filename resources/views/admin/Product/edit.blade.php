@@ -48,6 +48,23 @@
 
                                 <div class="col-md-6 col-lg-4">
                                     <div class="form-group">
+                                        <label for="category_id">Category</label>
+                                        <select name="category_id" class="form-control" id="category_id">
+                                            <option value="">Select Category</option>
+                                            @foreach ($categories as $category)
+                                                <option value="{{ $category->id }}" {{ old('category_id', $Product->category_id) == $category->id ? 'selected' : '' }}>
+                                                    {{ $category->name }}
+                                                </option>
+                                            @endforeach
+                                        </select>
+                                        @error('category_id')
+                                            <div class="text-danger">{{ $message }}</div>
+                                        @enderror
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="form-group">
                                         <label for="file_path">File (max 2MB)</label>
                                         <input type="file" name="file_path" class="form-control" id="file_path" />
                                         <small class="form-text text-muted d-block mb-2">
@@ -59,6 +76,35 @@
                                             </small>
                                         @endif
                                         @error('file_path')
+                                            <div class="text-danger">{{ $message }}</div>
+                                        @enderror
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="form-group">
+                                        <label for="image">Product Image</label>
+                                        <input type="file" name="image" class="form-control" id="image" />
+                                        <small class="form-text text-muted d-block mb-2">
+                                            Upload a new image (leave empty to keep current image)
+                                        </small>
+                                        @if($Product->image)
+                                            <small class="form-text text-info d-block mb-2">
+                                                Current image: <a href="{{ Storage::url($Product->image) }}" target="_blank">View</a>
+                                            </small>
+                                        @endif
+                                        @error('image')
+                                            <div class="text-danger">{{ $message }}</div>
+                                        @enderror
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="content">Product Description</label>
+                                        <textarea name="content" class="form-control" id="content" rows="4"
+                                            placeholder="Enter Product Description">{{ old('content', $Product->content) }}</textarea>
+                                        @error('content')
                                             <div class="text-danger">{{ $message }}</div>
                                         @enderror
                                     </div>

@@ -3,7 +3,7 @@
 @section('content')
     <div class="page-inner">
         <div class="page-header">
-            <h3 class="fw-bold mb-3">Product</h3>
+            <h3 class="fw-bold mb-3">Categories</h3>
             <ul class="breadcrumbs mb-3">
                 <li class="nav-home">
                     <a href="#">
@@ -14,7 +14,7 @@
                     <i class="icon-arrow-right"></i>
                 </li>
                 <li class="nav-item">
-                    <a href="#">Product</a>
+                    <a href="#">Categories</a>
                 </li>
                 <li class="separator">
                     <i class="icon-arrow-right"></i>
@@ -24,14 +24,14 @@
                 </li>
             </ul>
             <div class="ms-md-auto py-2 py-md-0">
-                <a href="{{ route('admin-product-create-page') }}" class="btn btn-primary btn-round">Add Product</a>
+                <a href="{{ route('admin-category-create-page') }}" class="btn btn-primary btn-round">Add Category</a>
             </div>
         </div>
         <div class="row">
             <div class="col-md-12">
                 <div class="card">
                     <div class="card-header">
-                        <h4 class="card-title">Product</h4>
+                        <h4 class="card-title">Categories</h4>
                     </div>
                     <div class="card-body">
                         <div class="table-responsive">
@@ -39,52 +39,42 @@
                                 <thead>
                                     <tr>
                                         <th>Sr</th>
-                                        <th>Image</th>
-                                        <th>Product Name</th>
-                                        <th>Category</th>
-                                        <th>File </th>
+                                        <th>Category Name</th>
+                                        <th>Slug</th>
+                                        <th>Products</th>
+                                        <th>Status</th>
                                         <th>Actions</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    @empty($Products)
+                                    @empty($categories)
                                         <tr>
-                                            <td colspan="6" class="text-center">No Products found</td>
+                                            <td colspan="6" class="text-center">No Categories found</td>
                                         </tr>
                                     @endempty
-                                    @foreach ($Products as $product)
+                                    @foreach ($categories as $category)
                                         <tr>
                                             <td>{{ $loop->iteration }}</td>
+                                            <td>{{ $category->name }}</td>
+                                            <td>{{ $category->slug }}</td>
+                                            <td>{{ $category->products_count }}</td>
                                             <td>
-                                                @if($product->image)
-                                                    <img src="{{ Storage::url($product->image) }}" alt="{{ $product->product_name }}" width="50" height="50" style="object-fit: cover; border-radius: 4px;">
-                                                @else
-                                                    -
-                                                @endif
-                                            </td>
-                                            <td>{{ $product->product_name }}</td>
-                                            <td>{{ $product->category->name ?? 'Uncategorized' }}</td>
-                                            <td>
-                                                @if($product->file_path)
-                                                    <a href="{{ Storage::url($product->file_path) }}" target="_blank">View
-                                                        File</a>
-                                                @else
-                                                    -
-                                                @endif
+                                                <span class="badge badge-{{ $category->status == 1 ? 'success' : 'secondary' }}">
+                                                    {{ $category->status == 1 ? 'Active' : 'Inactive' }}
+                                                </span>
                                             </td>
                                             <td>
                                                 <button
-                                                    onclick="window.location='{{ route('admin.product-edit-page', $product->id) }}'"
+                                                    onclick="window.location='{{ route('admin.category-edit-page', $category->id) }}'"
                                                     class="btn btn-warning btn-sm">Edit</button>
-                                                <form action="{{ route('admin.product.delete', $product->id) }}"
+                                                <form action="{{ route('admin.category.delete', $category->id) }}"
                                                     method="POST" style="display:inline;"
-                                                    onsubmit="return confirm('Are you sure you want to delete this product?');">
+                                                    onsubmit="return confirm('Are you sure you want to delete this category?');">
                                                     @csrf
                                                     @method('DELETE')
                                                     <button type="submit" class="btn btn-danger btn-sm">Delete</button>
                                                 </form>
                                             </td>
-
                                         </tr>
                                     @endforeach
                                 </tbody>

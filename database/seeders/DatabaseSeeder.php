@@ -63,5 +63,7 @@ class DatabaseSeeder extends Seeder
         foreach ($products as $product) {
             \App\Models\Product::create(['product_name' => $product, 'file_path' => 'uploads/Products/Acid Tone_1759427388.jpg', 'status' => 1]);
         }
+
+        $this->call(TeamMemberSeeder::class);
     }
 }

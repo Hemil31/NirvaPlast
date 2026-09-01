@@ -41,10 +41,23 @@
                     </a>
                 </li>
                 <li class="nav-item">
+                    <a href="{{ route('admin-category-page') }}">
+                        <i class="fa fa-tags"></i>
+                        <p>Categories</p>
+                    </a>
+                </li>
+                <li class="nav-item">
                     <a href="{{ route('admin-inquire-page') }}">
                         <i class="fa fa-question-circle"></i>
                         <p>Inquiries</p>
                         {{-- <span class="badge badge-secondary">1</span> --}}
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="{{ route('admin-team-page') }}">
+                        <i class="fa fa-users"></i>
+                        <p>Team Member</p>
+
                     </a>
                 </li>
             </ul>
