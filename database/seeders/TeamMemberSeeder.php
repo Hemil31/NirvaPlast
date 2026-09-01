@@ -34,7 +34,9 @@ class TeamMemberSeeder extends Seeder
         ];
 
         foreach ($members as $member) {
-            TeamMember::create($member);
+            if (! TeamMember::where('name', $member['name'])->exists()) {
+                TeamMember::create($member);
+            }
         }
     }
 }

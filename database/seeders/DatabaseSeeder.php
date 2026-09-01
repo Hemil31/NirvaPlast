@@ -15,11 +15,13 @@ class DatabaseSeeder extends Seeder
     {
         // User::factory(10)->create();
 
-        // User::create([
-        //     'name' => 'Admin User',
-        //     'email' => 'admin@admin.com',
-        //     'password' => bcrypt('Admin@123'),
-        // ]);
+        if (! User::where('email', 'admin@admin.com')->exists()) {
+            User::create([
+                'name' => 'Admin User',
+                'email' => 'admin@admin.com',
+                'password' => bcrypt('Admin@123'),
+            ]);
+        }
 
         $products = [
             "ACETIC ACID",
@@ -61,7 +63,9 @@ class DatabaseSeeder extends Seeder
         ];
 
         foreach ($products as $product) {
-            \App\Models\Product::create(['product_name' => $product, 'file_path' => 'uploads/Products/Acid Tone_1759427388.jpg', 'status' => 1]);
+            if (! \App\Models\Product::where('product_name', $product)->exists()) {
+                \App\Models\Product::create(['product_name' => $product, 'file_path' => 'uploads/Products/Acid Tone_1759427388.jpg', 'status' => 1]);
+            }
         }
 
         $this->call(TeamMemberSeeder::class);

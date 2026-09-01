@@ -31,6 +31,9 @@ until php artisan migrate --force --no-interaction 2>/tmp/migrate.log; do
     sleep 5
 done
 
+# Seed initial data (idempotent — safe on every boot)
+php artisan db:seed --force --no-interaction 2>>/tmp/seed.log || echo "Seed step skipped/failed (log in /tmp/seed.log)"
+
 # Render nginx config with the Railway-provided PORT
 export PORT="${PORT:-80}"
 envsubst '${PORT}' < /etc/nginx/nginx.conf > /tmp/nginx.conf && mv /tmp/nginx.conf /etc/nginx/nginx.conf
