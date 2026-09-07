@@ -46,7 +46,7 @@
                     </div>
 
                     <div class="login-pending">
-                        <div class=spinner>
+                        <div class="spinner">
                             <span class="dot1"></span>
                             <span class="dot2"></span>
                         </div>
@@ -59,6 +59,5 @@
             </form>
         </div>
     </div>
-    <script src="./script.js"></script>
 </body>
 </html>

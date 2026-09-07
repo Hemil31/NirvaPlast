@@ -37,7 +37,9 @@
                         @if (session('success'))
                             <div class="alert alert-success alert-dismissible fade show" role="alert">
                                 {{ session('success') }}
-                                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
                             </div>
                         @endif
                         <div class="table-responsive">
@@ -64,12 +66,16 @@
                                             <td>{{ $member->name }}</td>
                                             <td>{{ $member->role }}</td>
                                             <td>
-                                                @if (str_starts_with($member->image, 'front/'))
-                                                    <img src="{{ asset($member->image) }}" alt="{{ $member->name }}"
-                                                        style="width:50px;height:50px;object-fit:cover;" class="rounded">
+                                                @if ($member->image)
+                                                    @if (str_starts_with($member->image, 'front/'))
+                                                        <img src="{{ asset($member->image) }}" alt="{{ $member->name }}"
+                                                            style="width:50px;height:50px;object-fit:cover;" class="rounded">
+                                                    @else
+                                                        <img src="{{ Storage::url($member->image) }}" alt="{{ $member->name }}"
+                                                            style="width:50px;height:50px;object-fit:cover;" class="rounded">
+                                                    @endif
                                                 @else
-                                                    <img src="{{ Storage::url($member->image) }}" alt="{{ $member->name }}"
-                                                        style="width:50px;height:50px;object-fit:cover;" class="rounded">
+                                                    -
                                                 @endif
                                             </td>
                                             <td>
