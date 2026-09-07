@@ -2,7 +2,7 @@
         <div class="container py-5">
             <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
                 <h5 class="fw-bold text-primary text-uppercase mb-2">Capabilities</h5>
-                <h2 class="mb-0">What We Offer</h2>
+                <h1 class="mb-0">What We Offer</h1>
                 <p class="text-muted mb-0 mt-3">End-to-End Plastic Engineering & Manufacturing Solutions</p>
             </div>
             <div class="row g-4">
@@ -81,8 +81,8 @@
                         <div class="icon-box-primary mb-4">
                             <i class="bi bi-shield-plus text-dark"></i>
                         </div>
-                        <h5 class="mb-3">Suitable Material Expertise</h5>
-                        <p class="mb-4">Reliable material options for safe, performance-driven plastic products.</p>
+                        <h5 class="mb-3">Medical-Grade Materials</h5>
+                        <p class="mb-4">Patient-safe material options for safe, comfortable respiratory products.</p>
                         <a class="btn btn-light px-3" href="{{ route('service-page') }}">Read More<i class="bi bi-chevron-double-right ms-1"></i></a>
                     </div>
                 </div>

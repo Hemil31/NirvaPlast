@@ -64,11 +64,7 @@ Route::prefix('admin')->group(function () {
     Route::middleware(['auth'])->group(function () {
         Route::get('/logout', [LoginController::class, 'logout'])->name('admin-logout-page');
         Route::get('/dashboard', function () {
-            $totalInquiries = \App\Models\Inquire::count();
-            $totalProducts = \App\Models\Product::count();
-            $totalCategories = \App\Models\Category::count();
-            $totalTeamMembers = \App\Models\TeamMember::count();
-            return view('admin.index', compact('totalInquiries', 'totalProducts', 'totalCategories', 'totalTeamMembers'));
+            return view('admin.index');
         })->name('admin-dashboard-page');
 
         Route::prefix('product')->group(function () {

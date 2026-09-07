@@ -15,10 +15,10 @@
                 <h5 class="fw-bold text-primary text-uppercase">How We Work</h5>
                 <h1 class="mb-0">From Manufacturing Complexity to Precision, Quality & Reliability</h1>
             </div>
-            <p class="text-center text-muted mb-5 mx-auto" style="max-width: 800px;">Precision plastic manufacturing
-                requires consistent product quality, reliable materials, competitive pricing and dependable
-                high-volume production. NIRVA meets these needs through precision injection moulding, mould development,
-                CNC machining and OEM-focused manufacturing solutions.</p>
+            <p class="text-center text-muted mb-5 mx-auto" style="max-width: 800px;">The nebulizer mask industry
+                requires consistent product quality, patient-safe materials, competitive pricing and reliable
+                high-volume production. NIRVA meets these needs through precision injection moulding, scalable
+                production and OEM-focused manufacturing solutions.</p>
             <div class="row g-4 text-center">
                 @php
                     $steps = [

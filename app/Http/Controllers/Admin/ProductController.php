@@ -85,7 +85,7 @@ class ProductController extends Controller
         $validated = $request->validate([
             'product_name' => 'required|string|max:255',
             'category_id' => 'nullable|exists:categories,id',
-            'file_path' => 'nullable|file|max:2048',
+            'file_path' => 'nullable|max:2048',
             'image' => 'nullable|image|max:2048',
             'content' => 'nullable|string',
             'status' => 'required|integer|in:0,1',

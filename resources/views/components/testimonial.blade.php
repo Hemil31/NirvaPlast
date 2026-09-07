@@ -1,8 +1,61 @@
+<style>
+    .marquee-wrap {
+        overflow: hidden;
+        border-top: 1px solid rgba(255, 255, 255, 0.15);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    }
+    .marquee-track {
+        width: max-content;
+        display: flex;
+        animation: nirva-marquee 26s linear infinite;
+    }
+    .marquee-wrap:hover .marquee-track {
+        animation-play-state: paused;
+    }
+    @keyframes nirva-marquee {
+        from { transform: translateX(0); }
+        to { transform: translateX(-50%); }
+    }
+    .marquee-item {
+        display: flex;
+        align-items: center;
+        gap: 0.9rem;
+        white-space: nowrap;
+        padding: 0.9rem 2.2rem;
+        border-right: 1px solid rgba(255, 255, 255, 0.15);
+    }
+    .marquee-icon {
+        flex: 0 0 auto;
+        width: 46px;
+        height: 46px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.14);
+        color: #fff;
+        font-size: 1.1rem;
+    }
+    .commit-card {
+        position: relative;
+        border-radius: 0.65rem;
+        border-top: 4px solid var(--bs-primary);
+        transition: 0.3s ease;
+    }
+    .commit-card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 0.75rem 1.75rem rgba(51, 104, 198, 0.16) !important;
+    }
+    .commit-tag {
+        letter-spacing: 0.06em;
+    }
+</style>
+
 <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
     <div class="container py-4">
         <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 700px;">
             <h5 class="fw-bold text-primary text-uppercase">Our Commitments</h5>
-            <h2 class="mb-0">Delivering Precision. Ensuring Quality. Building Trust.</h2>
+            <h1 class="mb-0">Delivering Precision. Ensuring Quality. Building Trust.</h1>
         </div>
         <div class="row g-4">
             @php
@@ -23,7 +76,7 @@
                         'icon' => 'fa fa-handshake',
                         'tag' => 'Building Trust',
                         'title' => 'Trusted Partnership',
-                        'text' => 'Dedicated support and solutions tailored to OEM, distributor and private-label needs.',
+                        'text' => 'Dedicated support and solutions tailored to OEM, hospital and private-label needs.',
                     ],
                 ];
             @endphp
@@ -50,8 +103,8 @@
                     ['icon' => 'fa fa-bullseye', 'label' => 'Precision', 'desc' => 'You Can Rely On'],
                     ['icon' => 'fa fa-handshake', 'label' => 'Partnership', 'desc' => 'You Can Grow With'],
                     ['icon' => 'fa fa-truck', 'label' => 'On-Time Delivery', 'desc' => 'You Can Count On'],
-                    ['icon' => 'fa fa-industry', 'label' => 'Precision Products', 'desc' => 'Consistent & Reliable'],
-                    ['icon' => 'fa fa-sliders-h', 'label' => 'Customized Variants', 'desc' => 'Every Need Covered'],
+                    ['icon' => 'fa fa-industry', 'label' => 'Medical-Grade Products', 'desc' => 'Safe & Reliable'],
+                    ['icon' => 'fa fa-arrows-alt', 'label' => 'Adult & Pediatric', 'desc' => 'Every Need Covered'],
                 ];
             @endphp
             @foreach (array_merge($commitTicker, $commitTicker) as $item)

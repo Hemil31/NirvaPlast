@@ -6,13 +6,13 @@
             <div class="row g-5 align-items-center mb-5">
                 <div class="col-md-7 wow fadeIn" data-wow-delay="0.3s">
                     <h5 class="fw-bold text-primary text-uppercase mb-2">Leadership</h5>
-                    <h2 class="display-6 mb-3">Meet Our Visionary Team</h2>
+                    <h1 class="display-6 mb-3">Meet Our Visionary Team</h1>
                     <p class="mb-4">Our directors bring together strategic growth, production efficiency and
                         quality-focused operations to build NIRVA Technoplast into a trusted precision plastic
-                        manufacturing partner for every industry.</p>
+                        manufacturing partner for healthcare and industry.</p>
                     <div class="d-flex flex-wrap gap-2">
                         <span class="badge bg-primary rounded-pill px-3 py-2 fs-6">Precision Manufacturing</span>
-                        <span class="badge bg-secondary rounded-pill px-3 py-2 fs-6">Quality-Focused Operations</span>
+                        <span class="badge bg-secondary rounded-pill px-3 py-2 fs-6">Medical-Grade Focus</span>
                         <span class="badge bg-primary rounded-pill px-3 py-2 fs-6">Scalable Production</span>
                     </div>
                 </div>

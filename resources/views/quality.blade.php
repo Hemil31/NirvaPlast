@@ -1,7 +1,7 @@
 @extends('layout.main')
-@section('seo_title', 'Quality & Compliance | Reliable Plastic Manufacturing | NIRVA Technoplast')
-@section('seo_description', 'NIRVA Technoplast applies strict quality assurance, consistent process control and precision engineering across injection moulding to deliver reliable, consistent plastic components for every industry.')
-@section('seo_keywords', 'quality assurance, plastic manufacturing quality, quality control, precision moulding, injection moulding quality, NIRVA Technoplast, plastic components quality')
+@section('seo_title', 'Quality & Compliance | Medical-Grade Manufacturing | NIRVA Technoplast')
+@section('seo_description', 'NIRVA Technoplast applies medical-grade material selection, strict quality assurance and consistent process control across precision injection moulding to deliver safe, reliable nebulizer masks and plastic components.')
+@section('seo_keywords', 'quality assurance, medical-grade manufacturing, quality control, precision moulding, nebulizer mask quality, NIRVA Technoplast, plastic manufacturing quality')
 @section('breadcrumbTitle', 'Quality & Compliance')
 @section('breadcrumbActive', 'Quality')
 @push('schema')
@@ -9,12 +9,12 @@
 {
     "@@context": "https://schema.org",
     "@@type": "Service",
-    "serviceType": "Quality Assurance and Precision Plastic Manufacturing",
+    "serviceType": "Quality Assurance and Medical-Grade Manufacturing",
     "provider": {
         "@@type": "Organization",
         "name": "NIRVA Technoplast Private Limited"
     },
-    "description": "Precision injection moulding and strict quality checks for safe, reliable and consistent plastic components."
+    "description": "Medical-grade material selection, precision injection moulding and strict quality checks for safe, reliable and consistent plastic products."
 }
 </script>
 @endpush
@@ -28,12 +28,12 @@
                 <div class="col-lg-6">
                     <h5 class="fw-bold text-primary text-uppercase mb-2">Built Into Every Component</h5>
                     <h1 class="display-6 mb-4">Consistent Quality from Material to Finished Part</h1>
-                    <p class="mb-4">From material selection to precision injection moulding, our
+                    <p class="mb-4">From medical-grade material selection to precision injection moulding, our
                         manufacturing focus is on quality assurance, safety, consistency and reliable delivery.
                         Testing and quality systems are applied across production so every bulk order meets the
                         same standard.</p>
                     <ul class="list-unstyled mb-4">
-                        <li class="mb-2"><i class="fa fa-check-circle text-primary me-2"></i>Material selection & process control</li>
+                        <li class="mb-2"><i class="fa fa-check-circle text-primary me-2"></i>Medical-grade material selection</li>
                         <li class="mb-2"><i class="fa fa-check-circle text-primary me-2"></i>Precision injection moulding & process control</li>
                         <li class="mb-2"><i class="fa fa-check-circle text-primary me-2"></i>Consistent quality across high-volume batches</li>
                         <li class="mb-2"><i class="fa fa-check-circle text-primary me-2"></i>Testing and quality systems across production</li>

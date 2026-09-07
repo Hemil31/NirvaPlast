@@ -1,7 +1,7 @@
 @extends('layout.main')
 @section('seo_title', 'OEM & Private Label Manufacturing | NIRVA Technoplast')
-@section('seo_description', 'NIRVA Technoplast supports OEMs, brands, distributors and private-label companies with scalable precision injection moulding - from sampling to recurring bulk production.')
-@section('seo_keywords', 'OEM manufacturing, private label manufacturing, contract manufacturing, plastic OEM, injection moulding OEM, scalable plastic production, NIRVA Technoplast')
+@section('seo_description', 'NIRVA Technoplast supports medical-device OEMs, hospitals, distributors and private-label brands with scalable nebulizer-mask manufacturing - from sampling to recurring bulk production.')
+@section('seo_keywords', 'OEM manufacturing, private label manufacturing, medical device OEM, nebulizer mask OEM, private label nebulizer, scalable production, NIRVA Technoplast')
 @section('breadcrumbTitle', 'OEM & Private Label')
 @section('breadcrumbActive', 'OEM')
 @section('content')
@@ -13,9 +13,9 @@
                 <h5 class="fw-bold text-primary text-uppercase">OEM / Private Label</h5>
                 <h1 class="mb-0">OEM & Private-Label Manufacturing</h1>
             </div>
-            <p class="text-center text-muted mb-5 mx-auto" style="max-width: 800px;">NIRVA supports OEMs, brands,
-                distributors and private-label companies with scalable precision injection moulding of plastic
-                components. From sampling to recurring bulk production, we deliver customization, consistent
+            <p class="text-center text-muted mb-5 mx-auto" style="max-width: 800px;">NIRVA supports medical-device
+                OEMs, hospitals, distributors and private-label healthcare brands with scalable nebulizer-mask
+                manufacturing. From sampling to recurring bulk production, we deliver customization, consistent
                 quality and cost-efficient supply at every volume.</p>
             <div class="row g-4">
                 @php
@@ -49,7 +49,7 @@
         <div class="container py-3 mb-3">
             <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 700px;">
                 <h5 class="fw-bold text-primary text-uppercase">Our Process</h5>
-                <h2 class="mb-0">How We Work With You</h2>
+                <h1 class="mb-0">How We Work With You</h1>
             </div>
             <div class="row g-4 text-center">
                 @php
@@ -82,17 +82,17 @@
         <div class="container py-3">
             <div class="row g-5 align-items-center">
                 <div class="col-lg-6">
-                    <h5 class="fw-bold text-primary text-uppercase mb-2">Higher Value Assemblies</h5>
-                    <h2 class="display-6 mb-4">Complete Product Assemblies for OEM & Private Label</h2>
-                    <p class="mb-4">Instead of only single components, complete product assemblies offer higher value per
-                        set for brands and institutional buyers. Assemblies are put together on automated / semi-automated
-                        lines for speed, consistency and better unit economics.</p>
+                    <h5 class="fw-bold text-primary text-uppercase mb-2">Higher Value Kits</h5>
+                    <h1 class="display-6 mb-4">Complete Nebulization Kits for OEM & Private Label</h1>
+                    <p class="mb-4">Instead of only the mask, complete nebulization kits offer higher value per set for
+                        brands and institutional buyers. Kits are assembled on automated / semi-automated lines for
+                        speed, consistency and better unit economics.</p>
                     <div class="d-flex flex-wrap gap-2 mb-4">
-                        <span class="badge bg-primary rounded-pill px-3 py-2 fs-6">Moulded Components</span>
-                        <span class="badge bg-secondary rounded-pill px-3 py-2 fs-6">Precision Parts</span>
-                        <span class="badge bg-primary rounded-pill px-3 py-2 fs-6">Machined Pieces</span>
-                        <span class="badge bg-secondary rounded-pill px-3 py-2 fs-6">Accessories</span>
-                        <span class="badge bg-primary rounded-pill px-3 py-2 fs-6">Packaging / Labeling</span>
+                        <span class="badge bg-primary rounded-pill px-3 py-2 fs-6">Mask</span>
+                        <span class="badge bg-secondary rounded-pill px-3 py-2 fs-6">Medicine Cup</span>
+                        <span class="badge bg-primary rounded-pill px-3 py-2 fs-6">Air Tube</span>
+                        <span class="badge bg-secondary rounded-pill px-3 py-2 fs-6">Mouthpiece</span>
+                        <span class="badge bg-primary rounded-pill px-3 py-2 fs-6">Filter / Accessories</span>
                     </div>
                     <a href="{{ route('product-page') }}" class="btn btn-primary py-3 px-5">Explore Our Products</a>
                 </div>

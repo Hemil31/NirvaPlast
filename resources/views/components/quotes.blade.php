@@ -4,7 +4,7 @@
             <div class="col-lg-7">
                 <div class="section-title position-relative pb-3 mb-5">
                     <h5 class="fw-bold text-primary text-uppercase">OEM / Private Label</h5>
-                    <h2 class="mb-0">Discuss Your Manufacturing Requirement</h2>
+                    <h1 class="mb-0">Discuss Your Manufacturing Requirement</h1>
                 </div>
                 <div class="row gx-3 mb-4">
                     <div class="col-sm-6 wow zoomIn" data-wow-delay="0.2s">
@@ -16,8 +16,8 @@
                         </h5>
                     </div>
                 </div>
-                <p class="mb-4">NIRVA supports OEMs, brands, distributors and private-label companies with scalable precision
-                    injection moulding of plastic components and custom assemblies. From sampling to
+                <p class="mb-4">NIRVA supports medical-device OEMs, hospitals, distributors and private-label healthcare
+                    brands with scalable nebulizer-mask and custom plastic component manufacturing. From sampling to
                     bulk production, we provide consistent quality, competitive unit cost and recurring supply.</p>
 
                 <div class="d-flex align-items-center mt-2 wow zoomIn" data-wow-delay="0.6s">

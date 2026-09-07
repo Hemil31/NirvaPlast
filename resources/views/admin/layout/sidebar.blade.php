@@ -3,7 +3,7 @@
     <div class="sidebar-logo">
         <!-- Logo Header -->
         <div class="logo-header" data-background-color="dark">
-            <a href="{{ route('admin-dashboard-page') }}" class="logo">
+            <a href="index.html" class="logo">
                 <h1
                     style="color: white; opacity: 0.75; font-size: 18px; max-width: 100%; line-height: 1.2; margin: 0; padding: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
                     Admin

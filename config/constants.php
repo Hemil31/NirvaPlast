@@ -4,7 +4,7 @@ return [
     'company_name' => 'NIRVA TECHNOPLAST PRIVATE LIMITED',
     'brand_name' => 'NIRVA',
     'brand_sub' => 'TECHNOPLAST',
-    'tagline' => 'Precision Plastic Engineering & Manufacturing Solutions.',
+    'tagline' => 'Delivering Precision. Ensuring Quality. Building Trust.',
     'phone' => '+91 99132 92004',
     'phone2' => '+91 99132 92004',
     'email' => 'info@nirvatechnoplast.in',

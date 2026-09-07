@@ -13,7 +13,7 @@ class InquireController extends Controller
      */
     public function index()
     {
-        $inquires = Inquire::whereNotNull('name')->whereNotNull('email')->get();
+        $inquires = Inquire::where('name', '!=', 'null')->where('email', '!=', 'null')->get();
         return view('admin.inquires', compact('inquires'));
     }
 
@@ -30,19 +30,15 @@ class InquireController extends Controller
      */
     public function store(Request $request)
     {
-        $validated = $request->validate([
-            'name' => 'required|string|max:255',
-            'email' => 'required|email|max:255',
-            'mobile' => 'required|string|max:20',
-            'country_code' => 'nullable|string|max:10',
-            'message' => 'nullable|string',
-        ]);
+
+
+
 
         Inquire::create([
-            'name' => $validated['name'],
-            'email' => $validated['email'],
-            'mobile' => ($validated['country_code'] ?? '') . " " . $validated['mobile'],
-            'message' => $validated['message'] ?? null,
+            'name' => $request->name,
+            'email' => $request->email,
+            'mobile' => $request->country_code . " " . $request->mobile,
+            'message' => $request->message,
         ]);
 
         return response()->json(['success' => true, 'message' => 'Inquiry submitted successfully!']);

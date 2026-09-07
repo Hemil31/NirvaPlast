@@ -8,7 +8,7 @@
                         <img src="{{ asset('images/name-logo-write.png') }}" alt="{{ config('constants.company_name') }}" class="footer-name-logo">
                     </a>
                     <p class="fs-5 mb-4">{{ config('constants.tagline') }}</p>
-                    <p class="mb-4">Precision plastic engineering for every industry - precision injection moulding, mould development, CNC machining, custom plastic components and OEM / private-label supply.</p>
+                    <p class="mb-4">Precision plastic engineering solutions for healthcare & industry - injection moulding, medical-grade manufacturing, nebulizer masks and OEM / private-label supply.</p>
                     <p><i class="fa fa-map-marker-alt me-2"></i>{{ config('constants.address') }}</p>
                     <p><i class="fa fa-phone-alt me-2"></i><a class="text-white-50" href="tel:{{ config('constants.phone') }}">{{ config('constants.phone') }}</a></p>
                     <p><i class="fa fa-envelope me-2"></i><a class="text-white-50" href="mailto:{{ config('constants.email') }}">{{ config('constants.email') }}</a></p>
@@ -40,7 +40,7 @@
                         </div>
                         <div class="col-sm-12">
                             <h4 class="text-light mb-4">Partnership Message</h4>
-                            <p class="mb-3">"Precision. Performance. Reliability." - Let's build quality and build trust together.</p>
+                            <p class="mb-3">"Precision Care. Reliable Breathing." - Let's build quality and build trust together.</p>
                             <a href="{{ route('contact-page') }}" class="btn btn-primary px-4 py-3">Discuss Your Requirement <i class="bi bi-arrow-right ms-1"></i></a>
                         </div>
                     </div>
