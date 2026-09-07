@@ -6,7 +6,7 @@
             <div class="row g-5 align-items-center mb-5">
                 <div class="col-md-7 wow fadeIn" data-wow-delay="0.3s">
                     <h5 class="fw-bold text-primary text-uppercase mb-2">Leadership</h5>
-                    <h1 class="display-6 mb-3">Meet Our Visionary Team</h1>
+                    <h2 class="display-6 mb-3">Meet Our Visionary Team</h2>
                     <p class="mb-4">Our directors bring together strategic growth, production efficiency and
                         quality-focused operations to build NIRVA Technoplast into a trusted precision plastic
                         manufacturing partner for every industry.</p>

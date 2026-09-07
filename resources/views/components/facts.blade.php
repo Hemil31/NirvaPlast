@@ -8,7 +8,7 @@
                         </div>
                         <div class="ps-4">
                             <h5 class="text-white mb-0">Global Market 2025</h5>
-                            <h1 class="text-white mb-0">$362.5B</h1>
+                            <h2 class="text-white mb-0">$362.5B</h2>
                         </div>
                     </div>
                 </div>
@@ -19,7 +19,7 @@
                         </div>
                         <div class="ps-4">
                             <h5 class="text-primary mb-0">India Market Forecast 2030</h5>
-                            <h1 class="mb-0">$38.13B</h1>
+                            <h2 class="mb-0">$38.13B</h2>
                         </div>
                     </div>
                 </div>
@@ -30,7 +30,7 @@
                         </div>
                         <div class="ps-4">
                             <h5 class="text-white mb-0">India Market CAGR</h5>
-                            <h1 class="text-white mb-0">5.5%</h1>
+                            <h2 class="text-white mb-0">5.5%</h2>
                         </div>
                     </div>
                 </div>

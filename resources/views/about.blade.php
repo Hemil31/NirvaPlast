@@ -71,7 +71,7 @@
     <div class="container-fluid container-service py-5">
         <div class="container py-3">
             <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                <h1 class="display-6 mb-3">From Manufacturing Complexity to Precision, Quality & Reliability</h1>
+                <h2 class="display-6 mb-3">From Manufacturing Complexity to Precision, Quality & Reliability</h2>
                 <p class="mb-5">Overcoming Precision Manufacturing Challenges with Integrated Engineering Solutions.</p>
             </div>
             <div class="row g-4">

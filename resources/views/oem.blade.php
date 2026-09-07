@@ -49,7 +49,7 @@
         <div class="container py-3 mb-3">
             <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 700px;">
                 <h5 class="fw-bold text-primary text-uppercase">Our Process</h5>
-                <h1 class="mb-0">How We Work With You</h1>
+                <h2 class="mb-0">How We Work With You</h2>
             </div>
             <div class="row g-4 text-center">
                 @php
@@ -83,7 +83,7 @@
             <div class="row g-5 align-items-center">
                 <div class="col-lg-6">
                     <h5 class="fw-bold text-primary text-uppercase mb-2">Higher Value Assemblies</h5>
-                    <h1 class="display-6 mb-4">Complete Product Assemblies for OEM & Private Label</h1>
+                    <h2 class="display-6 mb-4">Complete Product Assemblies for OEM & Private Label</h2>
                     <p class="mb-4">Instead of only single components, complete product assemblies offer higher value per
                         set for brands and institutional buyers. Assemblies are put together on automated / semi-automated
                         lines for speed, consistency and better unit economics.</p>

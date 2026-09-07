@@ -2,7 +2,7 @@
     <div class="container py-5 mb-5">
         <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 650px;">
             <h5 class="fw-bold text-primary text-uppercase">Who We Serve</h5>
-            <h1 class="mb-0">Industries & Buyer Segments</h1>
+            <h2 class="mb-0">Industries & Buyer Segments</h2>
             <p class="text-muted mb-0 mt-3">Precision plastic manufacturing for a connected supply chain —
                 from design partners to last-mile institutional buyers.</p>
         </div>

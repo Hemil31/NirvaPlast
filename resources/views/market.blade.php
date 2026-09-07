@@ -128,7 +128,7 @@
         <div class="container py-3">
             <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 700px;">
                 <h5 class="fw-bold text-primary text-uppercase">Competition & Differentiation</h5>
-                <h1 class="mb-0">Our Edge Over Existing Manufacturers</h1>
+                <h2 class="mb-0">Our Edge Over Existing Manufacturers</h2>
             </div>
             <div class="row g-4 mb-5">
                 @php
@@ -181,7 +181,7 @@
         <div class="container py-3">
             <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 700px;">
                 <h5 class="fw-bold text-primary text-uppercase">Target Market</h5>
-                <h1 class="mb-0">Who We Serve</h1>
+                <h2 class="mb-0">Who We Serve</h2>
             </div>
             <div class="row g-4 mb-5">
                 @php
@@ -227,7 +227,7 @@
         <div class="container py-3">
             <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 700px;">
                 <h5 class="fw-bold text-primary text-uppercase">Why NIRVA</h5>
-                <h1 class="mb-0">Built for This Market</h1>
+                <h2 class="mb-0">Built for This Market</h2>
             </div>
             <div class="row g-4">
                 @php

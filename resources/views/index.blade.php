@@ -1,6 +1,6 @@
 @extends('layout.main')
-@section('seo_title', 'NIRVA Technoplast | Precision Injection Moulding & Plastic Engineering')
-@section('seo_description', 'NIRVA Technoplast Private Limited - precision injection moulding and plastic engineering. Custom plastic components, mould development, CNC machining, high-volume production and OEM / private-label supply for every industry.')
+@section('seo_title', 'NIRVA Technoplast | Precision Plastic Manufacturing')
+@section('seo_description', 'NIRVA Technoplast delivers precision injection moulding for medical-grade nebulizer masks, custom plastic components & OEM private-label supply.')
 @section('seo_keywords', 'precision injection moulding, plastic engineering, custom plastic components, mould development, CNC machining, high-volume production, OEM manufacturing, private label, contract manufacturing, NIRVA Technoplast')
 @push('schema')
 <script type="application/ld+json">
@@ -46,7 +46,7 @@
                         <div class="container">
                             <div class="row justify-content-end">
                                 <div class="col-lg-8 text-end">
-                                    <h1 class="display-1 text-white animated slideInLeft mb-3">Engineered Plastic Products | Precision • Performance • Reliability</h1>
+                                    <h2 class="display-1 text-white animated slideInLeft mb-3">Engineered Plastic Products | Precision • Performance • Reliability</h2>
                                     <p class="mb-4 animated slideInLeft">Custom-moulded and precision-machined plastic components
                                         built for high-volume, cost-efficient production with consistent quality.</p>
                                     <div class="d-flex flex-wrap gap-2 justify-content-end mb-4 animated slideInLeft">

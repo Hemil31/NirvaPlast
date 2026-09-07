@@ -2,7 +2,7 @@
     <div class="container py-3">
         <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 700px;">
             <h5 class="fw-bold text-primary text-uppercase">Quality & Compliance</h5>
-            <h1 class="mb-0">Quality Is Built Into Every Component</h1>
+            <h2 class="mb-0">Quality Is Built Into Every Component</h2>
         </div>
         <div class="row g-4">
             <div class="col-lg-2 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
