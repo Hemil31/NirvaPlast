@@ -16,8 +16,8 @@
                         </h5>
                     </div>
                 </div>
-                <p class="mb-4">NIRVA supports medical-device OEMs, hospitals, distributors and private-label healthcare
-                    brands with scalable nebulizer-mask and custom plastic component manufacturing. From sampling to
+                <p class="mb-4">NIRVA supports OEMs, brands, distributors and private-label companies with scalable precision
+                    injection moulding of plastic components and custom assemblies. From sampling to
                     bulk production, we provide consistent quality, competitive unit cost and recurring supply.</p>
 
                 <div class="d-flex align-items-center mt-2 wow zoomIn" data-wow-delay="0.6s">

@@ -1,7 +1,7 @@
 @extends('layout.main')
 @section('seo_title', 'About Us | Precision Plastic Engineering | NIRVA Technoplast')
-@section('seo_description', 'NIRVA Technoplast Private Limited is a precision injection-moulding company focused on medical-grade nebulizer masks, adult and pediatric variants, high-volume production and OEM / private-label supply.')
-@section('seo_keywords', 'about NIRVA Technoplast, plastic manufacturing company Surat, precision injection moulding, medical-grade nebulizer masks, OEM manufacturer India')
+@section('seo_description', 'NIRVA Technoplast Private Limited - precision injection moulding and plastic engineering company offering custom plastic components, mould development, CNC machining and high-volume OEM / private-label manufacturing.')
+@section('seo_keywords', 'about NIRVA Technoplast, plastic manufacturing company Surat, precision injection moulding, custom plastic components, mould development, OEM manufacturer India')
 @section('breadcrumbTitle', 'About Us')
 @section('breadcrumbActive', 'About')
 @section('content')
@@ -12,20 +12,20 @@
         <div class="container py-3">
             <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 700px;">
                 <h5 class="fw-bold text-primary text-uppercase">Our Solutions & Value Proposition</h5>
-                <h1 class="mb-0">Precision Manufacturing for Healthcare Supplier</h1>
+                <h1 class="mb-0">Precision Manufacturing for Every Industry</h1>
             </div>
             <p class="text-center text-muted mb-5 mx-auto" style="max-width: 800px;">NIRVA TECHNOPLAST PRIVATE LIMITED
-                focuses on precision manufacturing of high-quality nebulizer masks, delivering cost-efficient and scalable
-                solutions for medical-device OEMs, hospitals and healthcare suppliers.</p>
+                focuses on precision manufacturing of high-quality plastic components, delivering cost-efficient and scalable
+                solutions for OEMs, distributors and industrial buyers.</p>
             <div class="row g-5">
                 <div class="col-lg-6">
                     <h4 class="mb-4">Major Solutions We Offer</h4>
                     <div class="row g-3">
                         @php
                             $majors = [
-                                'Adult Nebulizer Masks',
-                                'Pediatric Nebulizer Masks',
-                                'Medical-Grade Moulding',
+                                'Precision Injection Moulding',
+                                'Custom Plastic Components',
+                                'Mould Development & CNC Machining',
                                 'High-Volume Production',
                                 'OEM / Private-Label Supply',
                             ];
@@ -45,8 +45,8 @@
                     <div class="row g-3">
                         @php
                             $values = [
-                                'Comfortable & Reliable Usage',
-                                'Child-Friendly Solutions',
+                                'High Precision & Consistency',
+                                'Tailored Engineered Solutions',
                                 'Consistent Product Quality',
                                 'Competitive Unit Cost',
                                 'Scalable & Recurring Supply',

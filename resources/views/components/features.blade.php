@@ -9,10 +9,10 @@
                     <div class="row g-5">
                         <div class="col-12 wow zoomIn" data-wow-delay="0.2s">
                             <div class="bg-primary rounded d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
-                                <i class="fa fa-heartbeat text-white"></i>
+                                <i class="fa fa-crosshairs text-white"></i>
                             </div>
-                            <h4>Medical-Grade Manufacturing</h4>
-                            <p class="mb-0">Nebulizer masks manufactured with a focus on quality, safety and consistency - built for patient-use and healthcare buyers.</p>
+                            <h4>Precision Manufacturing</h4>
+                            <p class="mb-0">Components manufactured with a focus on precision, quality, safety and consistency - built for OEMs and institutional buyers.</p>
                         </div>
                         <div class="col-12 wow zoomIn" data-wow-delay="0.6s">
                             <div class="bg-primary rounded d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
@@ -32,17 +32,17 @@
                     <div class="row g-5">
                         <div class="col-12 wow zoomIn" data-wow-delay="0.4s">
                             <div class="bg-primary rounded d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
-                                <i class="fa fa-child text-white"></i>
+                                <i class="fa fa-sliders-h text-white"></i>
                             </div>
-                            <h4>Adult & Pediatric Variants</h4>
-                            <p class="mb-0">Product options designed to serve different patient and OEM requirements - comfortably at every age.</p>
+                            <h4>Customized Variants</h4>
+                            <p class="mb-0">Product options designed to serve different customer and OEM requirements - tailored to every application.</p>
                         </div>
                         <div class="col-12 wow zoomIn" data-wow-delay="0.8s">
                             <div class="bg-primary rounded d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
                                 <i class="fa fa-handshake text-white"></i>
                             </div>
-                            <h4>Reliable Healthcare Partner</h4>
-                            <p class="mb-0">Consistent quality, competitive pricing and dependable bulk supply for OEMs, hospitals, distributors and private-label partners.</p>
+                            <h4>Reliable Manufacturing Partner</h4>
+                            <p class="mb-0">Consistent quality, competitive pricing and dependable bulk supply for OEMs, distributors and private-label partners.</p>
                         </div>
                     </div>
                 </div>

@@ -4,8 +4,8 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta name="robots" content="index, follow">
     <meta name="author" content="NIRVA Technoplast Private Limited">
-    <meta name="description" content="@yield('seo_description', 'Precision plastic engineering and manufacturing of medical-grade nebulizer masks, respiratory-care products and custom plastic components. Adult & pediatric nebulizer masks, high-volume production and OEM / private-label supply.')">
-    <meta name="keywords" content="@yield('seo_keywords', 'precision injection moulding, nebulizer masks, medical-grade manufacturing, OEM, private label, respiratory care, plastic engineering, NIRVA Technoplast')">
+    <meta name="description" content="@yield('seo_description', 'NIRVA Technoplast - precision injection moulding and plastic engineering for every industry. Precision moulding, mould development, CNC machining, custom plastic components, high-volume production and OEM / private-label supply.')">
+    <meta name="keywords" content="@yield('seo_keywords', 'precision injection moulding, plastic engineering, custom plastic components, mould development, CNC machining, high-volume injection moulding, OEM manufacturing, private label manufacturing, contract manufacturing, plastic component manufacturer, NIRVA Technoplast')">
 
     <!-- Canonical -->
     <link rel="canonical" href="{{ url()->current() }}">
@@ -14,14 +14,14 @@
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="{{ config('constants.brand_name') }} {{ config('constants.brand_sub') }}">
     <meta property="og:title" content="@yield('seo_title', config('constants.company_name') . ' | Precision Plastic Engineering Solutions')">
-    <meta property="og:description" content="@yield('seo_description', 'Precision plastic engineering and manufacturing of medical-grade nebulizer masks, respiratory-care products and custom plastic components.')">
+    <meta property="og:description" content="@yield('seo_description', 'Precision injection moulding and plastic engineering - precision moulding, mould development, CNC machining and custom plastic components.')">
     <meta property="og:url" content="{{ url()->current() }}">
     <meta property="og:image" content="{{ asset('front/img/carousel-1.jpg') }}">
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="@yield('seo_title', config('constants.company_name') . ' | Precision Plastic Engineering Solutions')">
-    <meta name="twitter:description" content="@yield('seo_description', 'Precision plastic engineering and manufacturing of medical-grade nebulizer masks, respiratory-care products and custom plastic components.')">
+    <meta name="twitter:description" content="@yield('seo_description', 'Precision injection moulding and plastic engineering - precision moulding, mould development, CNC machining and custom plastic components.')">
     <meta name="twitter:image" content="{{ asset('front/img/carousel-1.jpg') }}">
 
     <!-- Favicon -->
@@ -55,7 +55,7 @@
         "name": "NIRVA Technoplast Private Limited",
         "url": "{{ url('/') }}",
         "logo": "{{ asset('images/favicon/favicon-96x96.png') }}",
-        "description": "Precision plastic engineering and manufacturing solutions for healthcare and industry, including medical-grade nebulizer masks and OEM / private-label supply.",
+        "description": "NIRVA Technoplast - precision injection moulding and plastic engineering for every industry. Precision moulding, mould development, CNC machining, custom plastic components, high-volume production and OEM / private-label supply.",
         "contactPoint": {
             "@@type": "ContactPoint",
             "telephone": "{{ config('constants.phone') }}",

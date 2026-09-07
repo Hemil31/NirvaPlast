@@ -55,19 +55,19 @@
                     <div class="bg-primary rounded d-flex align-items-center justify-content-center mx-auto mb-3" style="width: 60px; height: 60px;">
                         <i class="fa fa-shield-alt text-white"></i>
                     </div>
-                    <h6 class="mb-0">Medical-Grade Materials</h6>
-                    <small class="text-muted">Suitable plastic materials for patient safety.</small>
+                    <h6 class="mb-0">Material & Process Control</h6>
+                    <small class="text-muted">Suitable plastic materials for reliable performance.</small>
                 </div>
             </div>
         </div>
         <div class="row mt-5">
             <div class="col-12">
                 <div class="bg-light rounded p-4 shadow-sm">
-                    <h5 class="text-primary mb-3"><i class="fa fa-lungs me-2"></i>Our Quality Approach</h5>
-                    <p class="mb-0">From medical-grade material selection to precision injection moulding, our
+                    <h5 class="text-primary mb-3"><i class="fa fa-shield-alt me-2"></i>Our Quality Approach</h5>
+                    <p class="mb-0">From material selection to precision injection moulding, our
                         manufacturing focus is on quality assurance, safety, consistency and reliable delivery.
                         Testing and quality systems are applied across production so every bulk order meets the same
-                        standard. Specific certifications, registrations and regulatory approvals are shared with
+                        standard. Specific certifications, registrations and compliance approvals are shared with
                         customers on request as per applicable documentation.</p>
                 </div>
             </div>

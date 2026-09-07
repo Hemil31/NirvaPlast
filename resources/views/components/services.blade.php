@@ -81,8 +81,8 @@
                         <div class="icon-box-primary mb-4">
                             <i class="bi bi-shield-plus text-dark"></i>
                         </div>
-                        <h5 class="mb-3">Medical-Grade Materials</h5>
-                        <p class="mb-4">Patient-safe material options for safe, comfortable respiratory products.</p>
+                        <h5 class="mb-3">Suitable Material Expertise</h5>
+                        <p class="mb-4">Reliable material options for safe, performance-driven plastic products.</p>
                         <a class="btn btn-light px-3" href="{{ route('service-page') }}">Read More<i class="bi bi-chevron-double-right ms-1"></i></a>
                     </div>
                 </div>

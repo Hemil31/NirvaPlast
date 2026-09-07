@@ -76,7 +76,7 @@
                         'icon' => 'fa fa-handshake',
                         'tag' => 'Building Trust',
                         'title' => 'Trusted Partnership',
-                        'text' => 'Dedicated support and solutions tailored to OEM, hospital and private-label needs.',
+                        'text' => 'Dedicated support and solutions tailored to OEM, distributor and private-label needs.',
                     ],
                 ];
             @endphp
@@ -103,8 +103,8 @@
                     ['icon' => 'fa fa-bullseye', 'label' => 'Precision', 'desc' => 'You Can Rely On'],
                     ['icon' => 'fa fa-handshake', 'label' => 'Partnership', 'desc' => 'You Can Grow With'],
                     ['icon' => 'fa fa-truck', 'label' => 'On-Time Delivery', 'desc' => 'You Can Count On'],
-                    ['icon' => 'fa fa-industry', 'label' => 'Medical-Grade Products', 'desc' => 'Safe & Reliable'],
-                    ['icon' => 'fa fa-arrows-alt', 'label' => 'Adult & Pediatric', 'desc' => 'Every Need Covered'],
+                    ['icon' => 'fa fa-industry', 'label' => 'Precision Products', 'desc' => 'Consistent & Reliable'],
+                    ['icon' => 'fa fa-sliders-h', 'label' => 'Customized Variants', 'desc' => 'Every Need Covered'],
                 ];
             @endphp
             @foreach (array_merge($commitTicker, $commitTicker) as $item)

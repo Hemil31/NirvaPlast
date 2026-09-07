@@ -3,18 +3,18 @@
         <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 650px;">
             <h5 class="fw-bold text-primary text-uppercase">Who We Serve</h5>
             <h1 class="mb-0">Industries & Buyer Segments</h1>
-            <p class="text-muted mb-0 mt-3">Precision medical plastics for a connected healthcare supply chain —
+            <p class="text-muted mb-0 mt-3">Precision plastic manufacturing for a connected supply chain —
                 from design partners to last-mile institutional buyers.</p>
         </div>
 
         @php
             $segments = [
-                ['icon' => 'fa fa-hospital', 'title' => 'Medical Device OEMs', 'desc' => 'Nebulizer & respiratory-care brands.'],
-                ['icon' => 'fa fa-user-md', 'title' => 'Hospitals & Clinics', 'desc' => 'Regular patient-use requirements.'],
-                ['icon' => 'fa fa-truck-loading', 'title' => 'Distributors & Wholesalers', 'desc' => 'Bulk medical supply for wide reach.'],
+                ['icon' => 'fa fa-industry', 'title' => 'OEM Manufacturers', 'desc' => 'Plastic component & product brands.'],
+                ['icon' => 'fa fa-building', 'title' => 'Institutional Buyers', 'desc' => 'Regular established-use requirements.'],
+                ['icon' => 'fa fa-truck-loading', 'title' => 'Distributors & Wholesalers', 'desc' => 'Bulk supply for wide reach.'],
                 ['icon' => 'fa fa-tags', 'title' => 'Private-Label Brands', 'desc' => 'Your brand, our precision manufacturing.'],
-                ['icon' => 'fa fa-globe-asia', 'title' => 'Export Buyers', 'desc' => 'International healthcare distributors.'],
-                ['icon' => 'fa fa-building', 'title' => 'Institutional Buyers', 'desc' => 'Continuous, timely bulk availability.'],
+                ['icon' => 'fa fa-globe-asia', 'title' => 'Export Buyers', 'desc' => 'International industrial distributors.'],
+                ['icon' => 'fa fa-cubes', 'title' => 'Industrial End-Users', 'desc' => 'Continuous, timely bulk availability.'],
             ];
         @endphp
 

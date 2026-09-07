@@ -1,7 +1,7 @@
 @extends('layout.main')
-@section('seo_title', 'Products | Nebulizer Masks & Medical-Grade Manufacturing | NIRVA Technoplast')
-@section('seo_description', 'Adult and pediatric nebulizer masks, complete nebulization kits and custom plastic components manufactured with medical-grade materials, high-volume production and OEM / private-label supply.')
-@section('seo_keywords', 'nebulizer masks, adult nebulizer mask, pediatric nebulizer mask, nebulization kit, medical plastic components, OEM manufacturing, private label, NIRVA Technoplast')
+@section('seo_title', 'Products | Precision Plastic Components & Custom Manufacturing | NIRVA Technoplast')
+@section('seo_description', 'Precision injection-moulded plastic components, custom-machined parts and complete assemblies manufactured with consistent quality, high-volume production and OEM / private-label supply.')
+@section('seo_keywords', 'precision injection moulding, custom plastic components, injection moulded parts, plastic manufacturing, mould development, CNC machining, OEM manufacturing, private label, NIRVA Technoplast')
 @section('breadcrumbTitle', 'Our Products')
 @section('breadcrumbActive', 'Products')
 @section('content')
@@ -9,8 +9,8 @@
     <!-- Page Title Section -->
     <div class="container-fluid py-4">
         <div class="container text-center">
-            <h1 class="display-4 fw-bold text-primary mb-2">Nebulizer Masks & Medical-Grade Products</h1>
-            <p class="lead text-muted">Precision Injection Moulding for Respiratory Care & Healthcare OEM Supply</p>
+            <h1 class="display-4 fw-bold text-primary mb-2">Precision Plastic Components & Custom Products</h1>
+            <p class="lead text-muted">Precision Injection Moulding & Plastic Engineering for OEM Supply</p>
         </div>
     </div>
 
@@ -89,7 +89,7 @@
                                             @if($product->content)
                                                 <p class="card-text text-muted flex-grow-1">{{ Str::limit(strip_tags($product->content), 120) }}</p>
                                             @else
-                                                <p class="card-text text-muted flex-grow-1">Precision-manufactured product for reliable performance.</p>
+                                                <p class="card-text text-muted flex-grow-1">Precision-manufactured plastic component for reliable performance.</p>
                                             @endif
                                             <button type="button" class="btn btn-primary rounded-pill">Detail</button>
                                         </div>
@@ -109,8 +109,8 @@
                 <div class="col-12">
                     <div class="marquee-container">
                         <div class="marquee-content">
-                            <span><i class="fa fa-bullseye me-2"></i>Medical-Grade Nebulizer Masks</span>
-                            <span><i class="fa fa-check-circle me-2"></i>Adult & Pediatric Variants</span>
+                            <span><i class="fa fa-bullseye me-2"></i>Precision Injection Moulding</span>
+                            <span><i class="fa fa-check-circle me-2"></i>Custom Component Production</span>
                             <span><i class="fa fa-industry me-2"></i>High-Volume Injection Moulding</span>
                             <span><i class="fa fa-cogs me-2"></i>Mould Development & CNC Machining</span>
                             <span><i class="fa fa-handshake me-2"></i>OEM & Private-Label Supply</span>

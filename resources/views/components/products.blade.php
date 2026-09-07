@@ -2,7 +2,7 @@
     <div class="container py-5">
         <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
             <h5 class="fw-bold text-primary text-uppercase">What We Manufacture</h5>
-            <h1 class="mb-0">Nebulizer Masks & Medical-Grade Products</h1>
+            <h1 class="mb-0">Precision Plastic Components & Custom Products</h1>
         </div>
         <div class="row g-4">
             @php
@@ -32,7 +32,7 @@
                                 @if($product->content)
                                     <p class="text-muted">{{ Str::limit(strip_tags($product->content), 100) }}</p>
                                 @else
-                                    <p class="text-muted">Precision-manufactured nebulizer mask for reliable respiratory care.</p>
+                                    <p class="text-muted">Precision-manufactured plastic component for reliable performance.</p>
                                 @endif
                                 <div class="d-flex justify-content-between align-items-center">
                                     <a class="text-primary fw-bold text-decoration-none" href="{{ route('product-page') }}">
@@ -60,8 +60,8 @@
                             <i class="fa fa-droplet fa-3x"></i>
                         </div>
                         <div class="p-4">
-                            <h4 class="mb-3">Adult Nebulizer Mask</h4>
-                            <p class="text-muted">Medical-grade adult nebulizer mask for reliable respiratory therapy.</p>
+                            <h4 class="mb-3">Custom Plastic Components</h4>
+                            <p class="text-muted">Precision injection-moulded components developed to your specifications.</p>
                             <div class="d-flex justify-content-between align-items-center">
                                 <a class="text-primary fw-bold text-decoration-none" href="{{ route('product-page') }}">
                                     Learn More <i class="bi bi-arrow-right"></i>
@@ -73,27 +73,11 @@
                 <div class="col-lg-3 col-md-6 wow zoomIn" data-wow-delay="0.5s">
                     <div class="product-item bg-light rounded overflow-hidden h-100 shadow-sm">
                         <div class="product-img-placeholder d-flex align-items-center justify-content-center bg-primary text-white" style="height: 200px;">
-                            <i class="fa fa-droplet fa-3x"></i>
+                            <i class="fa fa-cogs fa-3x"></i>
                         </div>
                         <div class="p-4">
-                            <h4 class="mb-3">Pediatric Nebulizer Mask</h4>
-                            <p class="text-muted">Child-friendly nebulizer mask with a comfortable, secure fit.</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <a class="text-primary fw-bold text-decoration-none" href="{{ route('product-page') }}">
-                                    Learn More <i class="bi bi-arrow-right"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow zoomIn" data-wow-delay="0.7s">
-                    <div class="product-item bg-light rounded overflow-hidden h-100 shadow-sm">
-                        <div class="product-img-placeholder d-flex align-items-center justify-content-center bg-primary text-white" style="height: 200px;">
-                            <i class="fa fa-droplet fa-3x"></i>
-                        </div>
-                        <div class="p-4">
-                            <h4 class="mb-3">Complete Nebulization Kit</h4>
-                            <p class="text-muted">Mask, medicine cup, tubing and mouthpiece for complete respiratory care.</p>
+                            <h4 class="mb-3">Mould Development</h4>
+                            <p class="text-muted">Custom moulds engineered for precision and production durability.</p>
                             <div class="d-flex justify-content-between align-items-center">
                                 <a class="text-primary fw-bold text-decoration-none" href="{{ route('product-page') }}">
                                     Learn More <i class="bi bi-arrow-right"></i>
@@ -108,8 +92,24 @@
                             <i class="fa fa-industry fa-3x"></i>
                         </div>
                         <div class="p-4">
-                            <h4 class="mb-3">Custom Medical Components</h4>
-                            <p class="text-muted">Custom injection-moulded components developed to your specifications.</p>
+                            <h4 class="mb-3">CNC Machined Parts</h4>
+                            <p class="text-muted">High-precision machined components for complex applications.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <a class="text-primary fw-bold text-decoration-none" href="{{ route('product-page') }}">
+                                    Learn More <i class="bi bi-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow zoomIn" data-wow-delay="0.9s">
+                    <div class="product-item bg-light rounded overflow-hidden h-100 shadow-sm">
+                        <div class="product-img-placeholder d-flex align-items-center justify-content-center bg-primary text-white" style="height: 200px;">
+                            <i class="fa fa-layer-group fa-3x"></i>
+                        </div>
+                        <div class="p-4">
+                            <h4 class="mb-3">Complete Assemblies</h4>
+                            <p class="text-muted">End-to-end assembled products for OEM & private-label supply.</p>
                             <div class="d-flex justify-content-between align-items-center">
                                 <a class="text-primary fw-bold text-decoration-none" href="{{ route('product-page') }}">
                                     Learn More <i class="bi bi-arrow-right"></i>

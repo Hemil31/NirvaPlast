@@ -9,10 +9,10 @@
                     <h1 class="display-6 mb-3">Meet Our Visionary Team</h1>
                     <p class="mb-4">Our directors bring together strategic growth, production efficiency and
                         quality-focused operations to build NIRVA Technoplast into a trusted precision plastic
-                        manufacturing partner for healthcare and industry.</p>
+                        manufacturing partner for every industry.</p>
                     <div class="d-flex flex-wrap gap-2">
                         <span class="badge bg-primary rounded-pill px-3 py-2 fs-6">Precision Manufacturing</span>
-                        <span class="badge bg-secondary rounded-pill px-3 py-2 fs-6">Medical-Grade Focus</span>
+                        <span class="badge bg-secondary rounded-pill px-3 py-2 fs-6">Quality-Focused Operations</span>
                         <span class="badge bg-primary rounded-pill px-3 py-2 fs-6">Scalable Production</span>
                     </div>
                 </div>
