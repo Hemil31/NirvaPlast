@@ -46,7 +46,7 @@
                         </div>
                     </div>
                 @empty
-                    <div class="col-12 text-center">No team members available.</div>
+                    <!-- <div class="col-12 text-center">No team members available.</div> -->
                 @endforelse
             </div>
         </div>

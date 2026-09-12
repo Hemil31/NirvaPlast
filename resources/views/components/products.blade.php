@@ -15,7 +15,7 @@
                         <div class="product-item bg-light rounded overflow-hidden h-100 shadow-sm d-flex flex-column">
                             @if($product->image)
                                 <div class="product-img overflow-hidden">
-                                    <img class="img-fluid w-100" src="{{ Storage::url($product->image) }}" alt="{{ $product->product_name }}" style="height: 200px; object-fit: cover;">
+                                    <img class="img-fluid w-100" src="{{ Storage::url($product->image) }}" alt="{{ $product->product_name }}" style="height: 200px; object-fit: contain; background: #fff;">
                                 </div>
                             @else
                                 <div class="product-img-placeholder d-flex align-items-center justify-content-center bg-primary text-white" style="height: 200px;">

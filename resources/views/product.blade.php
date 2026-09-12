@@ -78,7 +78,7 @@
                                 <div class="col-md-4 product-col" data-category="{{ $product->category_id ?? '0' }}">
                                     <div class="card product-card h-100 shadow-sm">
                                         @if($product->image)
-                                            <img src="{{ Storage::url($product->image) }}" class="card-img-top" alt="{{ $product->product_name }}" style="height: 200px; object-fit: cover;">
+                                            <img src="{{ Storage::url($product->image) }}" class="card-img-top" alt="{{ $product->product_name }}" style="height: 200px; object-fit: contain; background: #fff;">
                                         @else
                                             <div class="card-img-top d-flex align-items-center justify-content-center bg-primary text-white" style="height: 200px;">
                                                 <i class="fa fa-droplet fa-3x"></i>
